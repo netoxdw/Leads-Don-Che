@@ -163,6 +163,14 @@ body.nav-active { overflow: hidden; }
   color: var(--blue-crayola);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 150px;
+}
+
 
 /*-----------------------------------*\
   #REUSED STYLE
