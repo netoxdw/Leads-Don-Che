@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: monospace;
+    color: white;
+    background-color: #000000;    
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+}
+.header{
+    background-color: #f3b32c;
+    color: black;
+    border-radius: 0px 0px 15px 15px;
+}
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    font-size: 1.5rem;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    flex-basis: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.img-content{
+    display: flex;
+    align-items: center;
+}
+.img-landing{
+    width: 25rem;
+    border-radius: 10px;
+}
+
+form {
+    width: 70%; /* El formulario ocupa todo el ancho del contenedor */
+    margin-left: 0;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: calc(100% - 30px);
+    padding: 10px 30px 10px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #128f8d;
+    position: relative;
+}
+input[type="text"]::before,
+input[type="email"]::before,
+input[type="tel"]::before {
+    content: '\f007'; /* Icono de Font Awesome para el usuario */
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+input[type="email"]::before {
+    content: '\f0e0'; /* Icono de Font Awesome para el correo electrónico */
+}
+input[type="tel"]::before {
+    content: '\f095'; /* Icono de Font Awesome para el teléfono */
+}
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f3b32c;
+    color: #222221;
+    border: 2px solid #743113;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover {
+    background-color: #d26d0d;
+    color: #effefb;
+}
+
+#googleForm {
+    width: 100%; /* Ancho del iframe */
+    height: 100vh; /* Altura del iframe */
+    border: none; /* Sin bordes */
+}
+
+/* Estilos para los elementos dentro del formulario */
+#googleForm body {
+    /* Estilos del cuerpo del formulario */
+}
+
+#googleForm .quantumWizButtonPaperbuttonRaised {
+    /* Estilos para los botones */
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #171616;
+    height: 50px;
+    margin-top: auto;
+    text-align: center;
+}
+
+
+
+@media (max-width: 575px) {
+
+    .header, .main {
+        height: 4rem; /* Ajusta la altura del encabezado */
+        font-size: .7rem; /* Ajusta el tamaño del texto del encabezado */
+        text-align: center;
+    }
+
+    .main{
+        margin-top: 15px;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+
+    .container {
+        flex-direction: column;
+        margin-bottom: 40px;
+
+    }
+    .content {
+        width: 100%;
+        align-items: center;
+    }
+    figure{
+        text-align: center;
+    }
+    .img-landing{
+        width: 85%;
+    }
+    form {
+        width: 80%; /* El formulario ocupa todo el ancho del contenedor */
+    }
+
+  }
+  
+  /** dispositivos pequeños en vista landscape (horizontal) */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .content {
+        width: 100%;
+        align-items: center;
+    }
+  }
+  
+  /** dispositivos medianos (tablets) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    form {
+        width: 70%; /* El formulario ocupa todo el ancho del contenedor */
+        margin-left: 40px;
+    }
+  }
+  
