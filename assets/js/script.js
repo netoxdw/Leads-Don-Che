@@ -1,81 +1,32 @@
-'use strict';
+document.addEventListener('DOMContentLoaded', function() {
+  const textElement = document.getElementById('typing-text');
+  const texts = ['Pagina web', 'Google Ads', 'Facebook Ads', 'SEO'];
+  let textIndex = 0;
+  let charIndex = 0;
+  let typing = true;
 
-
-
-/**
- * add event listener on multiple elements
- */
-
-const addEventOnElements = function (elements, eventType, callback) {
-  for (let i = 0, len = elements.length; i < len; i++) {
-    elements[i].addEventListener(eventType, callback);
+  function type() {
+      if (typing) {
+          if (charIndex < texts[textIndex].length) {
+              textElement.innerHTML += texts[textIndex].charAt(charIndex);
+              charIndex++;
+              setTimeout(type, 150);
+          } else {
+              typing = false;
+              setTimeout(type, 2000);
+          }
+      } else {
+          if (charIndex > 0) {
+              textElement.innerHTML = texts[textIndex].substring(0, charIndex - 1);
+              charIndex--;
+              setTimeout(type, 100);
+          } else {
+              typing = true;
+              textIndex = (textIndex + 1) % texts.length;
+              setTimeout(type, 500);
+          }
+      }
   }
-}
 
-
-
-/**
- * NAVBAR TOGGLE FOR MOBILE
- */
-
-const navbar = document.querySelector("[data-navbar]");
-const navTogglers = document.querySelectorAll("[data-nav-toggler]");
-const overlay = document.querySelector("[data-overlay]");
-
-const toggleNavbar = function () {
-  navbar.classList.toggle("active");
-  overlay.classList.toggle("active");
-  document.body.classList.toggle("nav-active");
-}
-
-addEventOnElements(navTogglers, "click", toggleNavbar);
-
-
-
-/**
- * HEADER
- * active header when window scroll down to 100px
- */
-
-const header = document.querySelector("[data-header]");
-
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 100) {
-    header.classList.add("active");
-  } else {
-    header.classList.remove("active");
-  }
+  type();
 });
-
-
-
-
-
-
-/**
- * ACCORDION
- */
-
-const accordions = document.querySelectorAll("[data-accordion]");
-
-let lastActiveAccordion = accordions[0];
-
-const initAccordion = function (currentAccordion) {
-
-  const accordionBtn = currentAccordion.querySelector("[data-accordion-btn]");
-
-  const expandAccordion = function () {
-    if (lastActiveAccordion && lastActiveAccordion !== currentAccordion) {
-      lastActiveAccordion.classList.remove("expanded");
-    }
-
-    currentAccordion.classList.toggle("expanded");
-
-    lastActiveAccordion = currentAccordion;
-  }
-
-  accordionBtn.addEventListener("click", expandAccordion);
-
-}
-
-for (let i = 0, len = accordions.length; i < len; i++) { initAccordion(accordions[i]); }

@@ -4,822 +4,260 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="title" content="Agencia de Marketing para Generación de Leads | Leads Don Che">
-  <meta name="description"
-    content="Leads Don Che es una agencia de marketing especializada en generar leads de calidad para tu negocio. ¡Potencia tus ventas hoy mismo con nuestro equipo experto en estrategias de generación de leads!">
+  <title>Landing Page</title>
 
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <!-- 
-    - primary meta tags
-  -->
-  <title>Marketing Digital | Leads Don Che</title>
 
-  <!-- 
-    - favicon
-  -->
-  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
-
-  <!-- 
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 
-  <!-- 
-    - preload images
-  -->
-
-
+  <link href="/assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
+  
 
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <a href="index.html" class="logo">
-        <h3 class="navbar-link">Leads Don Che</h3>
-      </a>
-
-      <nav class="navbar" data-navbar>
-
-        <div class="navbar-top">
-          <a href="index.html" class="logo">
-            Leads Don Che
-          </a>
-
-          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
+  <!-- Sección Hero -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/images/DON CHE.png" alt="Logo" style="width: 200px; height: auto;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Paginas web</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Meta ads</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Google ads</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">SEO</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button class="btn">Haz una cotización</button>
+          </div>
         </div>
-
-        <ul class="navbar-list">
-
-          <li>
-            <a href="#inicio" class="navbar-link">Inicio</a>
-          </li>
-
-          <li>
-            <a href="#service" class="navbar-link">Qué hacemos</a>
-          </li>
-
-          <li>
-            <a href="#beneficios" class="navbar-link">Beneficios</a>
-          </li>
-
-          <li>
-            <a href="#contacto" class="navbar-link">Contacto</a>
-          </li>
-
-        </ul>
-
-        <div class="wrapper">
-          <a href="mailto:info@email.com" class="contact-link">leads-donche@gmail.com</a>
-
-          <a href="tel:5523398704" class="contact-link">+52 (552) 339 87 04</a>
-        </div>
-
-        <ul class="social-list">
-
-          <li>
-            <a href="https://www.facebook.com/profile.php?id=61557919866073" class="social-link" target="_blank">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-tiktok"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <a href="#" class="btn btn-primary free-btn">Evaluación</a>
-
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
-
-      <div class="overlay" data-nav-toggler data-overlay></div>
-
+      </div>
+    </nav>
+    <div class="video-container">
+      <video autoplay muted loop id="bg-video">
+        <source src="/assets/images/DESARROLLOWEB-HERO.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </div>
+    <div class="header-content text-center">
+      <a href="#cotizacion" class="btn call-action">Haz una cotización</a>
     </div>
   </header>
 
 
 
+  <!-- Sección Características -->
+  <section class="features py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <video src=""></video>
+    </div>
+  </section>
 
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="section hero has-bg-image" aria-label="home" id="inicio"
-        style="background-image: url('./assets/images/hero-bg.jpg')">
-        <div class="container">
-
-          <div class="hero-content">
-
-            <h1 class="h1 hero-title">
-              Aumenta tus Ventas con Nuestro Enfoque en el Ciclo Completo de Ventas
-            </h1>
-
-            <p class="hero-text">
-              ¡Descubre cómo nuestro servicio de Leads transforma Visitantes en Clientes Fieles"
-            </p>
-
-            <div class="btn-wrapper">
-
-              <a href="/pages/registro-masterclass.html" class="btn btn-primary free-btn">Clase de ventas masivas</a>
-
+  <!-- Sección Servicios -->
+  <section class="services py-5">
+    <div class="container">
+      <div class="text-center">
+        <p class="lead">Nos apasiona</p>
+        <h3>Servir Con</h3>
+      </div>
+      <!-- Agrega una clase `my-4` a la fila para espaciado vertical -->
+      <div class="row mt-4 my-4">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="service1.jpg" class="card-img-top" alt="Servicio 1">
+            <div class="card-body">
+              <h5 class="card-title">Landing page</h5>
+              <p class="card-text">Una landing page funciona para convertir visitantes en clientes. Aportando mucho valor a tu servicio. Ellos obtienen lo que quieren y tu lo que quieres, vender!</p>
             </div>
-
           </div>
-
-          <div class="hero-slider" data-slider>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/HHFOn1IDKUA?si=qaObOY3mOfdsaacW"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="service2.jpg" class="card-img-top" alt="Servicio 2">
+            <div class="card-body">
+              <h5 class="card-title">Google ads</h5>
+              <p class="card-text">Necesitas que tu sitio web tenga muchas visitas. Este servicio es ideal para cuando quieres que tus clientes te encuentren en google.</p>
+            </div>
           </div>
-
         </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #SERVICE
-      -->
-
-      <section class="section service" aria-labelledby="service-label">
-        <div class="container" id="service">
-
-          <p class="section-subtitle" id="service-label">¿Qué hacemos?</p>
-
-          <h2 class="h2 section-title">
-            El servicio que brindamos está diseñado para incrementar tu base de clientes.
-          </h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <ion-icon name="magnet-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">Presentación</h3>
-
-                <p class="card-text">
-                  En esta etapa, nos enfocamos en presentar tu producto o servicio a personas altamente receptivas y
-                  potencialmente interesadas en lo que tienes que ofrecer.
-                </p>
-                <!-- 
-                <a href="#" class="btn-text">
-                  <span class="span">Learn More</span>
-
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a> -->
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">Evaluación</h3>
-
-                <p class="card-text">
-                  Las personas que ya te conocen estan evaluando si comprarte a ti o a tu competencia, por lo que
-                  diseñamos anuncios especiales para que te elijan a ti.
-                </p>
-
-                <!-- <a href="#" class="btn-text">
-                  <span class="span">Learn More</span>
-
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a> -->
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <ion-icon name="cash-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">Conversión</h3>
-
-                <p class="card-text">
-                  En esta etapa, las personas ya se decidieron por comprarte por lo que se tiene que tener un sitio web
-                  para capturar sus datos y cerrar la venta.
-                </p>
-
-                <!-- <a href="#" class="btn-text">
-                  <span class="span">Learn More</span>
-
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a> -->
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">Fidelizar</h3>
-
-                <p class="card-text">
-                  ¡Fideliza y Sorprende a tus Clientes! Mantén el contacto con promociones exclusivas a través de email
-                  marketing y WhatsApp, garantizando una relación duradera y beneficiosa para ambos.
-                </p>
-
-                <!-- <a href="#" class="btn-text">
-                  <span class="span">Learn More</span>
-
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a> -->
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="about" aria-labelledby="about-label">
-        <div class="container">
-
-          <figure class="about-banner">
-            <img src="./assets/images/about-banner.png" width="800" height="580" loading="lazy" alt="about banner"
-              class="w-100">
-          </figure>
-
-          <div class="about-content" id="beneficios">
-
-            <p class="section-subtitle" id="about-label">¿Por qué elegirnos?</p>
-
-            <h2 class="h2 section-title">
-              Aportamos valor a tu empresa mediante el aumento de tu base de clientes.
-            </h2>
-
-            <ul>
-
-              <li class="about-item">
-                <div class="accordion-card expanded" data-accordion>
-
-                  <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn>
-                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-
-                      <spna class="span h5">Mayor alcance a clientes potenciales</spna>
-                    </button>
-                  </h3>
-
-                  <p class="accordion-content">
-                    Llevando tu marca, productos o servicios a una audiencia más amplia y generando nuevas oportunidades
-                    de negocio.
-                  </p>
-
-                </div>
-              </li>
-
-              <li class="about-item">
-                <div class="accordion-card" data-accordion>
-
-                  <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn>
-                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-
-                      <spna class="span h5">Agregamos alto valor a tu empresa</spna>
-                    </button>
-                  </h3>
-
-                  <p class="accordion-content">
-                    Optimizando la conversión de leads en ventas, asegurando un retorno de inversión significativo.
-                  </p>
-
-                </div>
-              </li>
-
-              <li class="about-item">
-                <div class="accordion-card" data-accordion>
-
-                  <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn>
-                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-
-                      <spna class="span h5">Resultados contables</spna>
-                    </button>
-                  </h3>
-
-                  <p class="accordion-content">
-                    Podrás medir el impacto real de nuestras acciones en tu crecimiento y rentabilidad.
-                  </p>
-
-                </div>
-              </li>
-
-            </ul>
-
+        <div class="col-md-3">
+          <div class="card">
+            <img src="service3.jpg" class="card-img-top" alt="Servicio 3">
+            <div class="card-body">
+              <h5 class="card-title">Meta ads</h5>
+              <p class="card-text">Si lo que necesitas es impulsar tu marca y llegar a mucha gente este servicio te permitira darte a conocer con aquellos que no saben que necesitan tu servicio.</p>
+            </div>
           </div>
-
         </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #FEATURE
-      -->
-
-      <section class="section feature" aria-labelledby="feature-label">
-        <div class="container">
-
-          <figure class="feature-banner">
-            <img src="./assets/images/feature-banner.png" width="800" height="531" loading="lazy" alt="feature banner"
-              class="w-100">
-          </figure>
-
-          <div class="feature-content">
-
-            <p class="section-subtitle" id="feautre-label">Nuestra soluciones</p>
-
-            <h2 class="h2 section-title">
-              Destaca sobre la competencia.
-            </h2>
-
-            <p class="section-text">
-              Aumenta tus ventas con nuestro poderoso funnel de ventas y estrategias de marketing que aseguran que tu
-              marca sea la más vista y deseada por tus clientes potenciales.
-            </p>
-
-            <ul class="feature-list">
-
-              <li>
-                <div class="feature-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <span class="span">
-                    Campañas virales
-                  </span>
-
-                </div>
-              </li>
-
-              <li>
-                <div class="feature-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <span class="span">
-                    Capta a tu audiencia en redes sociales
-                  </span>
-
-                </div>
-              </li>
-
-              <li>
-                <div class="feature-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <span class="span">
-                    Conversa con tus prospectos.
-                  </span>
-
-                </div>
-              </li>
-
-              <li>
-                <div class="feature-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <span class="span">
-                    Cierra ventas
-                  </span>
-
-                </div>
-              </li>
-
-            </ul>
-
+        <div class="col-md-3">
+          <div class="card">
+            <img src="service4.jpg" class="card-img-top" alt="Servicio 4">
+            <div class="card-body">
+              <h5 class="card-title">SEO</h5>
+              <p class="card-text">Deseas permanecer en las primeras posiciones de Google. El posicionamiento SEO es ideal para empresas que tienen una gran audiencia con un buen nicho de alto valor</p>
+            </div>
           </div>
-
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-
-
-
-
-      <!-- 
-        - #STATS
-      -->
-
-      <section class="stats" aria-label="our stats">
-        <div class="container">
-
-          <ul class="stats-card has-bg-image" style="background-image: url('./assets/images/stats-bg.jpg')">
-
-            <li>
-              <p class="card-text">
-                <span class="h1">17</span>
-
-                <spna class="span">Proyectos completados</spna>
-              </p>
-            </li>
-
-            <li>
-              <p class="card-text">
-                <span class="h1">10</span>
-
-                <spna class="span">Clientes felices</spna>
-              </p>
-            </li>
-
-            <li>
-              <p class="card-text">
-                <span class="h1">1</span>
-
-                <spna class="span">Año de experiencia</spna>
-              </p>
-            </li>
-
-            <li>
-              <p class="card-text">
-                <span class="h1">3</span>
-
-                <spna class="span">Certificaciones</spna>
-              </p>
-            </li>
-
-          </ul>
-
+  <!-- Sección Testimonios -->
+  <section class="testimonials py-5">
+    <div class="container">
+      <div class="text-center">
+        <p class="lead">Lo que Nuestros Clientes Dicen</p>
+        <h3>Testimonios</h3>
+      </div>
+      <!-- Tarjetas de Testimonios -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-4">
+        <!-- Testimonio 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Testimonio 1</h5>
+              <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat, velit id
+                maximus pulvinar, leo urna gravida magna, vitae viverra lectus lorem et velit."</p>
+            </div>
+          </div>
         </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #PROJECT
-      -->
-
-      <section class="section project" aria-labelledby="project-label">
-        <div class="container">
-
-          <p class="section-subtitle" id="project-label">Casos de éxito</p>
-
-          <h2 class="h2 section-title">
-            Conoce algunos de nuestros clientes satisfechos.
-          </h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
-                  <img src="./assets/images/blog-1.jpg" width="560" height="350" loading="lazy"
-                    alt="Ligula tristique quis risus" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Seriart Teziutlán</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras
-                    imperdiet nun eu dolor.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="meta-text" datetime="2022-04-14">14 Apr 2022</time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="meta-text">Coding</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
-                  <img src="./assets/images/blog-2.jpg" width="560" height="350" loading="lazy"
-                    alt="Nullam id dolor elit id nibh" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Aradia collection</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras
-                    imperdiet nun eu dolor.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="meta-text" datetime="2022-03-29">29 Mar 2022</time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="meta-text">Workspace</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
-                  <img src="./assets/images/blog-3.jpg" width="560" height="350" loading="lazy"
-                    alt="Ultricies fusce porta elit" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">FisVital</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras
-                    imperdiet nun eu dolor.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="meta-text" datetime="2022-02-26">26 Feb 2022</time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="meta-text">Meeting</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
+        <!-- Testimonio 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Testimonio 2</h5>
+              <p class="card-text">"Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                egestas. Maecenas rhoncus sapien at turpis porttitor, non consequat mauris ullamcorper."</p>
+            </div>
+          </div>
         </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #CTA
-      -->
-
-      <section class="cta" aria-label="call to action" id="contacto">
-        <div class="container">
-
-          <h2 class="h2 section-title">
-            ¿Tiene dudas? Hablemos por WhatsApp
-          </h2>
-
-          <a href="https://wa.me/5523398704?text=Hola! Me inetersa el plan de Leads Don Che"
-            class="btn btn-primary">WhatsApp</a>
-
+        <!-- Más tarjetas de testimonios aquí -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Testimonio 10</h5>
+              <p class="card-text">"Vestibulum faucibus erat eget nunc laoreet efficitur. Nunc ullamcorper, ligula vel
+                commodo rutrum, dolor est commodo elit, eget varius nunc purus ac mi."</p>
+            </div>
+          </div>
         </div>
-      </section>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Testimonio 10</h5>
+              <p class="card-text">"Vestibulum faucibus erat eget nunc laoreet efficitur. Nunc ullamcorper, ligula vel
+                commodo rutrum, dolor est commodo elit, eget varius nunc purus ac mi."</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Testimonio 10</h5>
+              <p class="card-text">"Vestibulum faucibus erat eget nunc laoreet efficitur. Nunc ullamcorper, ligula vel
+                commodo rutrum, dolor est commodo elit, eget varius nunc purus ac mi."</p>
+            </div>
+          </div>
+        </div>
 
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-    <div class="container grid-list">
-
-      <div class="footer-brand">
-
-        <a href="#" class="h4 footer-list-title">
-          Leads Don Che
-        </a>
-
-        <p class="footer-text">
-          &copy; 2024 Leads Don Che <br> Copyright.
-        </p>
-
-        <ul class="social-list">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
+        <!-- Testimonio 10 -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Testimonio 10</h5>
+              <p class="card-text">"Vestibulum faucibus erat eget nunc laoreet efficitur. Nunc ullamcorper, ligula vel
+                commodo rutrum, dolor est commodo elit, eget varius nunc purus ac mi."</p>
+            </div>
+          </div>
+        </div>
 
       </div>
+    </div>
+  </section>
 
-      <ul class="footer-list">
-
-        <li>
-          <p class="h4 footer-list-title">Contacto</p>
-        </li>
-
-        <li>
-          <address class="footer-text">
-            Teziutlán, Puebla, México.
-          </address>
-        </li>
-
-        <li>
-          <a href="mailto:info@email.com" class="footer-link">leads-donche@gmail.com</a>
-        </li>
-
-        <li>
-          <a href="tel:5523398704" class="footer-link">+52 (552) 339 87 04</a>
-        </li>
-
-      </ul>
-
-      <!-- <ul class="footer-list">
-
-        <li>
-          <p class="h4 footer-list-title">Learn More</p>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">About Us</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Our Story</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Projects</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Terms of Use</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Privacy Policy</a>
-        </li>
-
-      </ul> -->
-
-      <div class="footer-list">
-
-        <p class="h4 footer-list-title">Suscribete</p>
-
-        <p class="footer-text">
-          Suscríbase a nuestro boletín para recibir nuestras noticias y ofertas.
-        </p>
-
-        <form action="" class="input-wrapper">
-          <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
-
-          <button type="submit" class="submit-btn">Suscribete</button>
-        </form>
-
+  <!-- Sección Contacto -->
+  <section class="contact py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Primer Contenedor con Formulario de Contacto -->
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">¡Contáctanos!</h3>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="name">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Teléfono</label>
+                  <input type="tel" class="form-control" id="phone">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="message" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+              </form>
+              <hr>
+              <p class="mb-0">¿Prefieres WhatsApp?</p>
+              <a href="https://wa.me/1234567890" class="btn btn-success">Contactar por WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <!-- Segundo Contenedor con Mapa de Google -->
+        <div class="col-md-6 mt-4 mt-md-0">
+          <!-- Aquí va el código de Google Maps -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.5812455525444!2d-122.08364968441849!3d37.38605130767719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580e95db4cb13%3A0xf0b6b9e0e73b4df5!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1628874688032!5m2!1sen!2sus"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
       </div>
+    </div>
+  </section>
 
+  <footer class="footer py-4 bg-dark text-white text-center">
+    <div class="container">
+      <p>&copy; 2024 Nombre de tu Empresa. Todos los derechos reservados.</p>
     </div>
   </footer>
 
 
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
