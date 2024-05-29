@@ -115,43 +115,7 @@ html {
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  .header{
-    background-color: black;
-  }
-  .d-flex{
-    padding: 15px;
-  }
-  .navbar-collapse {
-    background-color: black; /* Color blanco para el fondo */
-    border-radius: 15px;
-  }
 
-  .header {
-    height: auto;
-  }
-
-  .video-container {
-    flex: none;
-    width: 100%;
-    height: auto;
-    margin-top: 55px;
-    margin-bottom: 60px;
-  }
-
-  #bg-video {
-    width: 100%;
-    height: auto;
-  }
-
-  .header-content {
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    transform: none;
-    padding: 10px;
-  }
-}
 
 /* CARACTERISTICAS */
 
@@ -245,5 +209,43 @@ html {
   .navbar-nav .nav-item {
     margin-bottom: 20px;
     /* Aumenta el espacio vertical */
+  }
+}
+
+@media (max-width: 768px) {
+  .header{
+    background-color: black;
+  }
+  .d-flex{
+    padding: 15px;
+  }
+  .navbar-collapse {
+    background-color: black; /* Color blanco para el fondo */
+    border-radius: 15px;
+  }
+
+  .header {
+    height: auto;
+  }
+
+  .video-container {
+    flex: none;
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+
+  #bg-video {
+    width: 100%;
+    height: auto;
+  }
+
+  .header-content {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    transform: none;
+    padding: 10px;
   }
 }
