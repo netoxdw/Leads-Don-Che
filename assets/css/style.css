@@ -43,6 +43,10 @@ html {
   width: 100%;
   z-index: 1000;
 }
+.logo{
+  width: 15rem;
+  height: auto;
+}
 
 .nav-item {
   font-weight: 500;
@@ -205,14 +209,14 @@ html {
   height: 100%;
 }
 
-@media (max-width: 725px) {
-  .navbar-nav .nav-item {
-    margin-bottom: 20px;
-    /* Aumenta el espacio vertical */
-  }
-}
+
 
 @media (max-width: 768px) {
+  .logo{
+    width: 10rem;
+    height: auto;
+    margin-left: 20px;
+  }
   .header{
     background-color: black;
   }
