@@ -35,6 +35,10 @@ html {
 .btn:hover{
   color: #fff;  
 }
+.color-head{
+  color: #c9c9c9;
+}
+
 /* barra de navegacion */
 .navbar{
   background-color: transparent !important;
@@ -124,30 +128,46 @@ html {
 /* CARACTERISTICAS */
 
 
-
-.features {
-  padding: 60px 0;
+/* RECENT PROYECTS */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
-.features .lead {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  /* padding: 20px; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.features h3 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+.project-info {
+  flex: 1;
 }
 
-.features p {
-  font-size: 1.25rem;
-  margin-bottom: 20px;
+.project-card img {
+  width: 300px;
+  height: 100%;
+  border-radius: 8px;
+}
+.description{
+  padding: 30px;
 }
 
-.features .btn {
-  font-size: 1.25rem;
+.project-card h3 {
+  margin-top: 0;
 }
 
+.description-p{
+  color: #c9c9c9;
+}
 
 
 .services {
@@ -211,7 +231,8 @@ html {
 
 
 
-@media (max-width: 768px) {
+/* Dispositivos mobiles */
+@media (max-width: 767px) {
   .logo{
     width: 10rem;
     height: auto;
@@ -219,6 +240,7 @@ html {
   }
   .header{
     background-color: black;
+    height: auto;
   }
   .d-flex{
     padding: 15px;
@@ -228,15 +250,11 @@ html {
     border-radius: 15px;
   }
 
-  .header {
-    height: auto;
-  }
-
   .video-container {
     flex: none;
     width: 100%;
     height: auto;
-    margin-top: 150px;
+    margin-top: 170px;
     margin-bottom: 100px;
   }
 
@@ -251,5 +269,40 @@ html {
     left: 0;
     transform: none;
     padding: 10px;
+  }
+
+  .projects-container{
+    padding: 20px 10px;
+  }
+  .project-card{
+    flex-direction: column;
+  }
+  .project-card img{
+    width: 100%;
+  }
+
+}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 1300px) {
+  .logo{
+    width: 10rem;
+    height: auto;
+    margin-left: 20px;
+  }
+  .header{
+    background-color: black;
+    height: auto;
+  }
+  .d-flex{
+    padding: 15px;
+  }
+  .navbar-collapse {
+    background-color: black; /* Color blanco para el fondo */
+    border-radius: 15px;
+  }
+
+  .project-card img{
+    height: 100%;
   }
 }
