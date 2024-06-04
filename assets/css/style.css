@@ -281,7 +281,8 @@ html {
   justify-content: center;
 }
 
-.card-service {
+.card-service,
+.card-pricing {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 25px;
@@ -318,6 +319,31 @@ html {
 .mind a{
   padding: 15px;
 }
+
+/* PRICING */
+.pricing{
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.card-pricing{
+  display: flex;
+  flex-direction: column;
+}
+.card-content {
+  flex-grow: 1;
+}
+.card-content p{
+  margin-bottom: 0px;
+}
+.card-pricing ul {
+  /* list-style: none; */
+  padding: 5px 15px;
+}
+.card-pricing button {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
 
 
 
