@@ -285,7 +285,7 @@ html {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 25px;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
   flex: 1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
