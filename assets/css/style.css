@@ -14,43 +14,59 @@ html {
 }
 
 /* Botones con clase call-action */
+/* Estilos generales */
+
+
 .btn.call-action {
-  background: linear-gradient(to right, #dee90a, #008000);
-  border-radius: 20px;
+  display: inline-block;
+  padding: 15px 30px; /* Tamaño del botón */
+  font-size: 18px; /* Tamaño de la fuente */
+  font-weight: bold; /* Negrita para el texto */
+  color: #fff; /* Color del texto */
+  background: linear-gradient(45deg, #28a745, #ff7f50); /* Degradado de verde a naranja */
+  border: none; /* Sin borde */
+  border-radius: 50px; /* Bordes redondeados */
+  text-decoration: none; /* Sin subrayado */
+  transition: all 0.3s ease; /* Transición suave para todas las propiedades */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
-/* Botones sin clase call-action */
-.btn:not(.call-action) {
-  background-color: black;
-  border-radius: 15px;
-  border: 2px solid #008000;
-  /* Borde verde */
+.btn.call-action:hover {
+  background: linear-gradient(45deg, #218838, #ff4500); /* Cambio de color al pasar el cursor */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Animación para el texto */
+@keyframes text-glow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 1);
+  }
+}
+
+.btn.call-action:hover span {
+  animation: text-glow 1.5s infinite alternate; /* Efecto de brillo en el texto */
+}
+/* Botones btn-contact */
+.btn-contact {
+  background-color: transparent; /* Fondo transparente */
+  color: white; /* Color de las letras blanco */
+  border: 2px solid white; /* Borde blanco */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  cursor: pointer; /* Cursor de puntero */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.btn-contact:hover {
+  background-color: white; /* Fondo blanco al pasar el cursor */
+  color: black; /* Letras negras al pasar el cursor */
 }
 
 /* Estilos generales para todos los botones */
-.btn {
-  color: white;
-  /* Color del texto */
-  border: none;
-  /* Quitamos el borde por defecto */
-  padding: 10px 20px;
-  /* Espaciado interno */
-  cursor: pointer;
-  /* Cambio de cursor al pasar por encima */
-}
-
-.btn:hover {
-  color: #fff;
-}
-
-.color-head {
-  color: #c9c9c9;
-}
-.color-p{
-  color: #00938a;
-  font-weight: 600;
-  font-size: 1.1rem;
-}
 
 /* barra de navegacion */
 .navbar {

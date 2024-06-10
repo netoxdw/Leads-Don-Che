@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -25,6 +25,8 @@
 
   <!-- Estilos CSS -->
   <link href="/assets/css/style.css" rel="stylesheet">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/ff3cb8b610.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -57,7 +59,7 @@
             </li>
           </ul>
           <div class="d-flex">
-            <button class="btn">Contacto</button>
+            <button class="btn btn-contact">Contacto</button>
           </div>
         </div>
       </div>
@@ -69,8 +71,8 @@
       </video>
     </div>
     <div class="header-content text-center">
-      <a href="#cotizacion" class="btn call-action">Hacer cotización</a>
-    </div>
+      <a href="#cotizacion" class="btn call-action"><span>Hacer cotización</span></a>
+    </div>    
   </header>
 
 
@@ -183,7 +185,7 @@
       <h3>¿Tienes un proyecto en mente?</h3>
       <p>Creemos algo juntos.</p>
       <a href="#">
-        <button class="btn">Contacto</button>
+        <button class="btn btn-contact">Contacto</button>
       </a>
     </div>
   </section>
@@ -196,9 +198,9 @@
       <div class="card-container">
         <div class="card-pricing">
           <div class="card-content">
-            <img src="#" alt="Landing-page">
-            <h3>Landing Page</h3>
-            <p>$1,000</p>
+            <img src="/assets/images/pricing-01.svg" alt="pricing-01">
+            <h3>Presencia en linea</h3>
+            <p>$7,000</p>
             <p>MXN</p>
             <br>
             <p class="color-head">Primeros pasos</p>
@@ -206,10 +208,13 @@
             <ul>
               <li>Diseño web personalizado y responsivo</li>
               <li>SEO básico</li>
-              <li>Única página</li>
+              <li>Presentación del negocio</li>
+              <li>Servicios/productos principales</li>
+              <li>Integración con Redes Sociales</li>
               <li>Formulario de contacto</li>
-              <li>Mapa de Ubicación</li>
-              <li><b>Enlace a Whatsapp</b></li>
+              <li>Información de contacto</li>
+              <li>Registro en Google My Business</li>
+              <li><b>Enlace de Whatsapp</b></li>
             </ul>
           </div>
           
@@ -221,21 +226,23 @@
 
         <div class="card-pricing" style="background-color: black; color: white;">
           <div class="card-content">
-            <img src="#" alt="Sitio Web Web">
+            <img src="/assets/images/pricing-02.svg" alt="pricing-02">
             <h3>Sitio Web Estandar</h3>
-            <p>$5,000+</p>
-            <p>MXN/mes</p>
+            <p>$12,000+</p>
+            <p>MXN</p>
             <br>
             <p class="color-head">Empresa en crecimiento</p>
             <hr>
             <ul>
-              <li>Todo de Landing Page</li>
-              <li>SEO Avanzado</li>
-              <li>Email Marketing</li>
-              <li>Sistema de Pagos</li>
-              <li>Registro de Citas</li>
-              <li>Preguntas Frecuentes</li>
-              <li><b>Complemento:</b> implementación de gestión de relaciones con el cliente (CRM)</li>
+              <li>Todo lo incluido en Presencia en Linea</li>
+              <li><b>Email Marketing:</b> Correo de bienvenida</li>
+              <li>Galería de Imágenes/Videos</li>
+              <li>Integración con Google Maps</li>
+              <li>Formulario de Reservas/Citas</li>
+              <li>Testimonios de Clientes</li>
+              <li>Certificado de seguridad SSL</li>
+              <li>Soporte Técnico Básico</li>
+              <li><b>Chatbot Interactivo:</b> Integración de un chatbot interactivo con respuestas personalizadas y recolección de datos de contacto.</li>
             </ul>
           </div>
           
@@ -246,20 +253,23 @@
 
         <div class="card-pricing">
           <div class="card-content">
-            <img src="#" alt="marketing digital">
-            <h3>Publicidad en Google</h3>
-            <p>$8,000 + Anuncios</p>
-            <p>MXN/mes</p>
+            <img src="/assets/images/pricing-03.svg" alt="pricing-03">
+            <h3>Comercio Electrónico</h3>
+            <p>$27,000+</p>
+            <p>MXN</p>
             <br>
             <p class="color-head">Consolida tu empresa</p>
             <hr>
             <ul>
-              <li>Todo de Sitio Web Estandar</li>
-              <li>Análisis de tu Empresa</li>
-              <li>Segmentación</li>
-              <li>Palabras Clave</li>
-              <li>Campañas Inteligentes</li>
-              <li><b>Mejora Continua</b></li>
+              <li>Todo lo incluido en Sitio Web Estandar</li>
+              <li>Tienda en Línea</li>
+              <li>Pasarelas de Pago Seguras</li>
+              <li>Usuarios Registrados</li>
+              <li>Análisis y Reportes</li>
+              <li>Soporte Técnico Avanzado</li>
+              <li>SEO Avanzado</li>
+              <li>Campañas de Email Marketing</li>
+              <li><b>Chatbot Avanzado:</b> Integración de un chatbot avanzado con inteligencia artificial para atención al cliente y soporte 24/7.</li>
             </ul>
           </div>
           
@@ -270,10 +280,61 @@
       </div>
   </section>
 
-  <footer class="footer py-4 bg-dark text-white text-center">
-    <div class="container">
-      <p>&copy; 2024 Nombre de tu Empresa. Todos los derechos reservados.</p>
+  <footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.facebook.com/profile.php?id=61557919866073&locale=es_LA"
+          role="button"
+          data-mdb-ripple-color="dark"
+          target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://leads-donche.com/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          target="_blank"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.instagram.com/leadsdonche/?next=%2F"
+          role="button"
+          data-mdb-ripple-color="dark"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Github -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://github.com/netoxdw"
+          role="button"
+          data-mdb-ripple-color="dark"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
     </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright:
+      <a class="text-dark" href="#">leads-donche.com</a>
+    </div>
+    <!-- Copyright -->
   </footer>
 
 
