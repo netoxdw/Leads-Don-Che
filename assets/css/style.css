@@ -14,17 +14,14 @@ html {
 }
 
 /* Botones con clase call-action */
-/* Estilos generales */
-
-
 .btn.call-action {
   display: inline-block;
   padding: 15px 30px; /* Tamaño del botón */
   font-size: 18px; /* Tamaño de la fuente */
   font-weight: bold; /* Negrita para el texto */
-  color: #fff; /* Color del texto */
-  background: linear-gradient(45deg, #28a745, #ff7f50); /* Degradado de verde a naranja */
-  border: none; /* Sin borde */
+  color: black; /* Color del texto */
+  background-color: #adff00; /* Degradado de verde a naranja */
+  border: 2px solid #fff; /* Sin borde */
   border-radius: 50px; /* Bordes redondeados */
   text-decoration: none; /* Sin subrayado */
   transition: all 0.3s ease; /* Transición suave para todas las propiedades */
@@ -32,9 +29,10 @@ html {
 }
 
 .btn.call-action:hover {
-  background: linear-gradient(45deg, #218838, #ff4500); /* Cambio de color al pasar el cursor */
+  background-color: #fff;
   transform: scale(1.05); /* Aumenta ligeramente el tamaño */
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  border: 2px solid #adff00;
 }
 
 /* Animación para el texto */
@@ -50,6 +48,8 @@ html {
 .btn.call-action:hover span {
   animation: text-glow 1.5s infinite alternate; /* Efecto de brillo en el texto */
 }
+
+
 /* Botones btn-contact */
 .btn-contact {
   background-color: transparent; /* Fondo transparente */
@@ -64,6 +64,32 @@ html {
 .btn-contact:hover {
   background-color: white; /* Fondo blanco al pasar el cursor */
   color: black; /* Letras negras al pasar el cursor */
+}
+
+.btn-obtener{
+  background-color: transparent; /* Fondo transparente */
+  border: 2px solid black; /* Borde blanco */
+  width: 100%;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s; 
+  font-weight: 500;
+}
+.btn-obtener:hover {
+  background-color: black; /* Fondo blanco al pasar el cursor */
+  color: white; /* Letras negras al pasar el cursor */
+}
+.btn-obtener-main{
+  background-color: #adff00; /* Fondo transparente */
+  border: 2px solid white; /* Borde blanco */
+  width: 100%;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s; 
+  font-weight: 500;
+}
+.btn-obtener-main:hover {
+  background-color: white; /* Fondo blanco al pasar el cursor */
+  color: black; /* Letras negras al pasar el cursor */
+  border: 2px solid #adff00;
 }
 
 /* Estilos generales para todos los botones */
