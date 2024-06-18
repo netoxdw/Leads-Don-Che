@@ -130,10 +130,9 @@ html {
 /* barra de navegacion */
 .navbar {
   background-color: black;
-  position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  height: 90px;
 }
 
 .logo {
@@ -175,7 +174,7 @@ html {
 
 
 .have-mind {
-  padding: 200px 10px 60px;
+  padding: 100px 10px 60px;
 }
 
 .mind {
@@ -246,6 +245,7 @@ html {
 .option-group {
   display: flex;
   gap: 20px;
+  justify-content:space-around;
 }
 
 .option {
@@ -255,7 +255,7 @@ html {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
-  width: 100px;
+  width: 10rem;
   text-align: center;
   background-color: #f9f9f9;
 }
