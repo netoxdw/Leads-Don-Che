@@ -112,27 +112,29 @@
             <div class="form-group full-width">
                 <button class="btn call-action" type="submit">Enviar</button>
                 <script>
-                    window.addEventListener("DOMContentLoaded", function() {
-                        var form = document.querySelector("form");
-                        form.addEventListener("submit", function(event) {
-                            event.preventDefault();
-                            var data = new FormData(form);
-                            fetch("/", {
-                                method: "POST",
-                                headers: {
-                                    "Accept": "application/json",
-                                },
-                                body: data
-                            }).then(function(response) {
-                                if (response.ok) {
-                                    alert("Thank you for your submission!");
-                                    form.reset();
-                                } else {
-                                    alert("Submission failed, please try again.");
-                                }
-                            });
-                        });
-                    });
+        window.addEventListener("DOMContentLoaded", function() {
+            var form = document.querySelector("form");
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+                var data = new FormData(form);
+                fetch("/", {
+                    method: "POST",
+                    headers: {
+                        "Accept": "application/json",
+                    },
+                    body: data
+                }).then(function(response) {
+                    if (response.ok) {
+                        window.location.href = "/";
+                    } else {
+                        alert("Submission failed, please try again.");
+                    }
+                }).catch(function(error) {
+                    alert("Submission failed, please try again.");
+                });
+            });
+        });
+    </script>
                 </script>
             </div>
         </form>
