@@ -95,15 +95,15 @@
                 <label>¿Qué necesita tu negocio?:</label>
                 <div class="option-group">
                     <div class="option">
-                        <input type="radio" id="option1" name="option" value="option1" required>
+                        <input type="radio" id="option1" name="option" value="Presencia en internet" required>
                         <label for="option2">Presencia en Internet</label>
                     </div>
                     <div class="option">
-                        <input type="radio" id="option2" name="option" value="option2" required>
+                        <input type="radio" id="option2" name="option" value="Interactuar con tus clientes" required>
                         <label for="option3">Interactuar con tus clientes</label>
                     </div>
                     <div class="option">
-                        <input type="radio" id="option3" name="option" value="option3" required>
+                        <input type="radio" id="option3" name="option" value="Conseguir mas clientes" required>
                         <label for="option1">Conseguir más clientes</label>
                     </div>
                 </div>
@@ -111,9 +111,33 @@
 
             <div class="form-group full-width">
                 <button class="btn call-action" type="submit">Enviar</button>
+                <script>
+                    window.addEventListener("DOMContentLoaded", function() {
+                        var form = document.querySelector("form");
+                        form.addEventListener("submit", function(event) {
+                            event.preventDefault();
+                            var data = new FormData(form);
+                            fetch("/", {
+                                method: "POST",
+                                headers: {
+                                    "Accept": "application/json",
+                                },
+                                body: data
+                            }).then(function(response) {
+                                if (response.ok) {
+                                    alert("Thank you for your submission!");
+                                    form.reset();
+                                } else {
+                                    alert("Submission failed, please try again.");
+                                }
+                            });
+                        });
+                    });
+                </script>
             </div>
         </form>
     </div>
+    
     
 
 
