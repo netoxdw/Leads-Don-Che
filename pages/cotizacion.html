@@ -22,7 +22,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/index.html">
                 <img src="/assets/images/DON CHE.png" alt="Logo" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -58,10 +58,6 @@
             <h3>Comience con su proyecto</h3>
             <p>A continuación conteste el formulario para conocer más sobre sus necesidades y proponer soluciones
                 efectivas</p>
-            <a href="#">
-                <a href="https://wa.me/+525523398704?text=Hola hablo a Don Che. Me interesa Información sobre los sitios web"
-                    target="_blank"><button class="btn btn-contact">Contacto</button></a>
-            </a>
         </div>
     </section>
 
@@ -125,7 +121,7 @@
                     body: data
                 }).then(function(response) {
                     if (response.ok) {
-                        window.location.href = "/";
+                        window.location.href = "/index";
                     } else {
                         alert("Submission failed, please try again.");
                     }

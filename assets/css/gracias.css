@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* Botones con clase call-action */
+  .btn.call-action {
+    display: inline-block;
+    padding: 15px 30px;
+    /* Tamaño del botón */
+    font-size: 18px;
+    /* Tamaño de la fuente */
+    font-weight: bold;
+    /* Negrita para el texto */
+    color: black;
+    /* Color del texto */
+    background-color: #adff00;
+    /* Degradado de verde a naranja */
+    border: 2px solid #fff;
+    /* Sin borde */
+    border-radius: 50px;
+    /* Bordes redondeados */
+    text-decoration: none;
+    /* Sin subrayado */
+    transition: all 0.3s ease;
+    /* Transición suave para todas las propiedades */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+  }
+  
+  .btn.call-action:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    /* Sombra más pronunciada */
+    border: 2px solid #adff00;
+  }
+  
+  /* Animación para el texto */
+  @keyframes text-glow {
+    0% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.8);
+    }
+  
+    100% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 1);
+    }
+  }
+  
+  .btn.call-action:hover span {
+    animation: text-glow 1.5s infinite alternate;
+    /* Efecto de brillo en el texto */
+  }
+  
+  
+  /* Botones btn-contact */
+  .btn-contact {
+    background-color: transparent;
+    /* Fondo transparente */
+    color: white;
+    /* Color de las letras blanco */
+    border: 2px solid white;
+    /* Borde blanco */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    cursor: pointer;
+    /* Cursor de puntero */
+    transition: background-color 0.3s, color 0.3s;
+    /* Transición suave para el cambio de color */
+  }
+  
+  .btn-contact:hover {
+    background-color: white;
+    /* Fondo blanco al pasar el cursor */
+    color: black;
+    /* Letras negras al pasar el cursor */
+  }
+  
+  .btn-obtener {
+    background-color: transparent;
+    /* Fondo transparente */
+    border: 2px solid black;
+    /* Borde blanco */
+    width: 100%;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 500;
+  }
+  
+  .btn-obtener:hover {
+    background-color: black;
+    /* Fondo blanco al pasar el cursor */
+    color: white;
+    /* Letras negras al pasar el cursor */
+  }
+  
+  .btn-obtener-main {
+    background-color: #adff00;
+    /* Fondo transparente */
+    border: 2px solid white;
+    /* Borde blanco */
+    width: 100%;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 500;
+  }
+  
+  .btn-obtener-main:hover {
+    background-color: white;
+    /* Fondo blanco al pasar el cursor */
+    color: black;
+    /* Letras negras al pasar el cursor */
+    border: 2px solid #adff00;
+  }
+  
+  
+  /* barra de navegacion */
+  .navbar {
+    background-color: black;
+    top: 0;
+    width: 100%;
+    height: 90px;
+  }
+  
+  .logo {
+    width: 15rem;
+    height: auto;
+  }
+  
+  .nav-item {
+    font-weight: 500;
+    margin-left: 30px;
+  }
+  
+  .navbar-nav {
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .navbar-nav .nav-link {
+    position: relative;
+    color: #fff;
+  }
+  
+  .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  .navbar-nav .nav-link:hover::after {
+    width: calc(100% - 20px);
+    /* Cambia el valor de 20px según el espaciado deseado */
+  }
+
+  /* main */
+  .have-mind {
+    padding: 100px 10px 60px;
+  }
+  
+  .mind {
+    background-color: black;
+    border-radius: 50px;
+    color: #fff;
+    padding: 40px 25px;
+  }
+  
+  .mind h3 {
+    font-size: 2.5rem;
+    color: #a3ff00;
+    padding: 15px;
+  }
+  
+  .mind p {
+    font-size: 1.3rem;
+    padding: 10px 15px;
+  }
+  
+  .mind a {
+    padding: 15px;
+  }
+
+
+  @media (max-width: 767px) {
+    .logo {
+      width: 10rem;
+      height: auto;
+    }
+    .navbar > .container{
+      padding: 0px 20px;
+    }
+    .d-flex {
+      padding: 15px;
+    }
+  
+    .navbar-collapse {
+      background-color: black;
+      /* Color blanco para el fondo */
+      border-radius: 15px;
+    }
+  }  
