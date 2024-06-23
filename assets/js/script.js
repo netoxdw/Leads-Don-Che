@@ -5,12 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mostrar el banner si no se ha dado el consentimiento
     if (!getCookie('cookies_accepted')) {
         cookieBanner.style.display = 'block';
+    } else {
+        loadGoogleAnalytics();
     }
 
     // Manejar el clic en el botón de aceptar cookies
     acceptCookiesButton.addEventListener('click', () => {
         setCookie('cookies_accepted', 'true', 365);
         cookieBanner.style.display = 'none';
+        loadGoogleAnalytics();
     });
 
     // Función para obtener una cookie por nombre
@@ -26,5 +29,20 @@ document.addEventListener('DOMContentLoaded', () => {
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
         const expires = `expires=${date.toUTCString()}`;
         document.cookie = `${name}=${value}; ${expires}; path=/`;
+    }
+
+    // Función para cargar Google Analytics
+    function loadGoogleAnalytics() {
+        const script = document.createElement('script');
+        script.src = `https://www.googletagmanager.com/gtag/js?id=G-HD00BWQM92`;
+        script.async = true;
+        document.head.appendChild(script);
+
+        script.onload = () => {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-HD00BWQM92');
+        };
     }
 });
