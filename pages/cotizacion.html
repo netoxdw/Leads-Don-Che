@@ -17,17 +17,18 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="/assets/css/cotizacon.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HD00BWQM92"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-HD00BWQM92');
+    </script>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HD00BWQM92"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-HD00BWQM92');
-</script>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -72,7 +73,8 @@
     </section>
 
     <div class="container">
-        <form  class="contact-form" name="contact" method="POST"  action="/pages/gracias.html" data-netlify="true" netlify>
+        <form class="contact-form" name="contact" method="POST" action="/pages/gracias.html" data-netlify="true"
+            netlify>
             <div class="form-group">
                 <label for="first-name">Nombre <span>*</span></label>
                 <input type="text" id="first-name" name="first-name" placeholder="first name" required>
@@ -118,35 +120,35 @@
             <div class="form-group full-width">
                 <button class="btn call-action" type="submit">Enviar</button>
                 <script>
-        window.addEventListener("DOMContentLoaded", function() {
-            var form = document.querySelector("form");
-            form.addEventListener("submit", function(event) {
-                event.preventDefault();
-                var data = new FormData(form);
-                fetch("/", {
-                    method: "POST",
-                    headers: {
-                        "Accept": "application/json",
-                    },
-                    body: data
-                }).then(function(response) {
-                    if (response.ok) {
-                        window.location.href = "/pages/gracias.html";
-                    } else {
-                        alert("Submission failed, please try again.");
-                    }
-                }).catch(function(error) {
-                    alert("Submission failed, please try again.");
-                });
-            });
-        });
-    </script>
+                    window.addEventListener("DOMContentLoaded", function () {
+                        var form = document.querySelector("form");
+                        form.addEventListener("submit", function (event) {
+                            event.preventDefault();
+                            var data = new FormData(form);
+                            fetch("/", {
+                                method: "POST",
+                                headers: {
+                                    "Accept": "application/json",
+                                },
+                                body: data
+                            }).then(function (response) {
+                                if (response.ok) {
+                                    window.location.href = "/pages/gracias.html";
+                                } else {
+                                    alert("Submission failed, please try again.");
+                                }
+                            }).catch(function (error) {
+                                alert("Submission failed, please try again.");
+                            });
+                        });
+                    });
+                </script>
                 </script>
             </div>
         </form>
     </div>
-    
-    
+
+
 
 
 
