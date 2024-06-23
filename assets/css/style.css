@@ -13,6 +13,32 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+/* Cookie */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  display: none;
+}
+
+.cookie-banner a {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+.cookie-banner button {
+  background-color: #ffd700;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
 /* Botones con clase call-action */
 .btn.call-action {
   display: inline-block;
