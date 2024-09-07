@@ -13,6 +13,11 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* Cookie */
 .cookie-banner {
   position: fixed;
@@ -410,6 +415,33 @@ html {
 .card-pricing button {
   padding: 10px;
   margin-bottom: 10px;
+}
+
+
+.whatsapp-float {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 100;
+  animation: bounce 2s infinite;
+}
+
+.whatsapp-float img {
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
 }
 
 
