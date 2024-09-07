@@ -547,6 +547,9 @@ html {
   .have-mind{
     padding: 30px 10px;
   }
+  .reverse{
+    flex-direction: column-reverse;
+  }
 }
 
 /** dispositivos medianos (tablets) */
