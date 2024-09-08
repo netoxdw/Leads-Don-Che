@@ -268,6 +268,44 @@ html {
   color: black;
 }
 
+/* Reels y tiktoks */
+.reels {
+  text-align: center;
+  margin: 90px 0;
+}
+.reels h2{
+  margin-bottom: 65px;
+}
+
+.reels-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.reel-video {
+  width: 315px; /* Ajustado a la relación de aspecto 9:16 */
+  height: 560px;
+  border-radius: 10px;
+  object-fit: cover; /* Asegura que el video mantenga sus proporciones */
+}
+
+    /* Ajuste de posiciones individuales */
+.reel-video-1 {
+  transform: translateY(-20px); /* Eleva el primer video */
+}
+
+.reel-video-2 {
+  transform: translateY(30px); /* Baja el segundo video */
+}
+.reel-video-3 {
+  transform: translateY(-10px); /* Eleva ligeramente el tercer video */
+}
+
+.reel-video-4 {
+  transform: translateY(15px); /* Baja ligeramente el cuarto video */
+}
+
 /* RECENT PROYECTS                   */
 .recent-projects{
   padding-top: 90px;
@@ -494,6 +532,30 @@ html {
   .cards {
     flex-direction: column;
     align-items: center;
+  }
+
+  /* Reels */
+  .reels-container{
+    flex-direction: column;
+  }
+  .reel-video{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .reel-video-1 {
+    transform: translateY(0) translateX(-35px); /* Eleva el primer video */
+  }
+  
+  .reel-video-2 {
+    transform: translateY(0)translateX(15px); /* Baja el segundo video */
+  }
+  .reel-video-3 {
+    transform: translateY(0)translateX(-40px); /* Eleva ligeramente el tercer video */
+  }
+  
+  .reel-video-4 {
+    transform: translateY(0) translateX(40px); /* Baja ligeramente el cuarto video */
   }
 
   .projects-container {
