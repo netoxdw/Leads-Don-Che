@@ -284,8 +284,8 @@ html {
 }
 
 .reel-video {
-  width: 315px; /* Ajustado a la relación de aspecto 9:16 */
-  height: 560px;
+  width: 18%; /* Ajustado a la relación de aspecto 9:16 */
+  height: auto;
   border-radius: 10px;
   object-fit: cover; /* Asegura que el video mantenga sus proporciones */
 }
@@ -556,6 +556,9 @@ html {
   
   .reel-video-4 {
     transform: translateY(0) translateX(40px); /* Baja ligeramente el cuarto video */
+  }
+  .reel-video-5 {
+    transform: translateY(0) translateX(-40px); /* Baja ligeramente el cuarto video */
   }
 
   .projects-container {
