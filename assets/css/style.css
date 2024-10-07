@@ -11,7 +11,7 @@ html {
   height: 100%;
   overflow-x: hidden;
   font-family: "Lato", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   background-color: #F8FAFC;
 
@@ -61,7 +61,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  right: 15px;
 }
 
 /* Estilos para la sección Hero */
