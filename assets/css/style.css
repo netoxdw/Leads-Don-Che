@@ -57,6 +57,12 @@ img {
   background: linear-gradient(90deg, rgba(39, 85, 62, 1) 11%, rgba(49, 106, 76, 1) 68%);
 }
 
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
 /* Estilos para la sección Hero */
 .hero {
