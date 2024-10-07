@@ -57,19 +57,27 @@ img {
   background: linear-gradient(90deg, rgba(39, 85, 62, 1) 11%, rgba(49, 106, 76, 1) 68%);
 }
 
-.header-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 15px;
+.navbar{
+  background-color: transparent;
 }
 
 /* Estilos para la sección Hero */
 .hero {
   background: rgb(207, 220, 232);
   background: linear-gradient(207deg, rgba(207, 220, 232, 1) 0%, rgba(244, 247, 250, 1) 45%, rgba(145, 174, 201, 1) 100%);
-  padding: 100px 0;
+  padding: 50px 0;
   /* Espacio superior e inferior */
+}
+.hero .logo{
+  text-align: center;
+  padding-bottom: 50px;
+}
+.hero .logo h2{
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #2b4b7d;
 }
 
 .hero .display-4 {
@@ -80,7 +88,7 @@ img {
 }
 
 .head-span {
-  color: #6480ac;
+  color: #3c80d4;
 }
 
 .hero .lead {
@@ -363,6 +371,9 @@ img {
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
+  .hero .logo h2{
+    font-size: 2rem;
+  }
   .hero .row {
     flex-direction: column;
     /* Apilar contenido en columna */
