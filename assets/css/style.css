@@ -69,11 +69,22 @@ img {
   /* Espacio superior e inferior */
 }
 .hero .logo{
-  text-align: center;
+  display: flex;
+  justify-content: center;
   padding-bottom: 50px;
 }
 .hero .logo img{
-  width: 240px;
+  width: 45px;
+  border-radius: 0px;
+}
+.hero .logo h2{
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #29323d;
+  margin-left: 10px;
+  padding-top: 12px;
 }
 
 
@@ -368,8 +379,9 @@ img {
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
-  .hero .logo img{
-    width: 15rem;
+  .hero .logo h2{
+    display: none;
+    font-size: 1.5rem;
   }
   .hero .row {
     flex-direction: column;
