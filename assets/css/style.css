@@ -143,12 +143,44 @@ img {
   /* Color de texto */
 }
 
-.MOBILE{
-  position: absolute;
-  width: 400px;
-  bottom: 20px;
-  right: -109PX;
-}
+  /* Animación para la imagen desktop */
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* Animación para la imagen mobile */
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Aplicación de animaciones */
+  .img-desktop {
+    animation: slideInFromLeft 1s ease-in-out;
+  }
+
+  .img-mobile {
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    right: -109px;
+    animation: slideInFromBottom 1s ease-in-out;
+  }
+
+
 
 
 
@@ -441,9 +473,9 @@ img {
     /* Espacio entre elementos */
   }
 
-  .MOBILE{
+  .img-mobile{
     width: 200px;
     bottom: -10px;
-    right: -20px;
+    right: -15px;
   }
 }
