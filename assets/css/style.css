@@ -442,8 +442,8 @@ img {
   }
 
   .MOBILE{
-    width: 150px;
+    width: 200px;
     bottom: -10px;
-    right: 0;
+    right: -20px;
   }
 }
