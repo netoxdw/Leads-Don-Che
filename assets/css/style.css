@@ -380,7 +380,7 @@ img {
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
   .hero .logo h2{
-    display: none;
+    /* display: none; */
     font-size: 1.5rem;
   }
   .hero .row {
