@@ -65,13 +65,13 @@ img {
 .hero {
   background: rgb(207, 220, 232);
   background: linear-gradient(207deg, rgba(207, 220, 232, 1) 0%, rgba(244, 247, 250, 1) 45%, rgba(145, 174, 201, 1) 100%);
-  padding: 50px 0;
+  padding: 20px 0;
   /* Espacio superior e inferior */
 }
 .hero .logo{
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 .hero .logo img{
   width: 45px;
@@ -379,9 +379,17 @@ img {
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
+  .hero .logo{
+    padding: 50px 0px;
+  }
   .hero .logo h2{
-    /* display: none; */
     font-size: 1.5rem;
+  }
+  .hero h1{
+    margin-bottom: 20px;
+  }
+  .hero p{
+    margin-bottom: 20px;
   }
   .hero .row {
     flex-direction: column;
