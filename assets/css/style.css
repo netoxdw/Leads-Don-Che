@@ -43,14 +43,11 @@ html {
 }
 
 /* Generales */
-h1 {
-
-}
-
 img {
   border-radius: 20px;
 }
 
+/* botones */
 .btn-modern {
   display: inline-block;
   padding: 15px 30px;
@@ -95,6 +92,8 @@ img {
   position: relative;
   z-index: 1;
 }
+
+/* Barra de navegación */
 
 .navbar{
   background-color: transparent;
@@ -144,11 +143,11 @@ img {
   /* Color de texto */
 }
 
-.hero .btn-primary {
-  background-color: #007bff;
-  /* Fondo azul */
-  border-color: #007bff;
-  /* Borde azul */
+.MOBILE{
+  position: absolute;
+  width: 400px;
+  bottom: 20px;
+  right: -109PX;
 }
 
 
@@ -419,6 +418,7 @@ img {
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
+
   .hero .logo{
     padding: 50px 0px;
   }
@@ -439,5 +439,11 @@ img {
   .hero .col-lg-6 {
     margin-bottom: 30px;
     /* Espacio entre elementos */
+  }
+
+  .MOBILE{
+    width: 150px;
+    bottom: -10px;
+    right: 0;
   }
 }
