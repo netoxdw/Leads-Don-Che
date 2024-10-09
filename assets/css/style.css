@@ -143,43 +143,48 @@ img {
   /* Color de texto */
 }
 
-  /* Animación para la imagen desktop */
-  @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 1;
   }
-
-  /* Animación para la imagen mobile */
-  @keyframes slideInFromBottom {
-    0% {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
+}
 
-  /* Aplicación de animaciones */
-  .img-desktop {
-    animation: slideInFromLeft 1s ease-in-out;
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
   }
-
-  .img-mobile {
-    width: 400px;
-    position: absolute;
-    bottom: 0;
-    right: -109px;
-    animation: slideInFromBottom 1s ease-in-out;
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
+}
 
+/* Imagenes sin animar */
+.img-desktop, .img-mobile {
+  opacity: 0; /* Las imágenes estarán ocultas inicialmente */
+  transform: translateX(0); /* Reiniciar posición */
+}
+
+/* Aplicación de animaciones cuando sean visibles */
+.animate-desktop {
+  animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+.animate-mobile {
+  position: absolute;
+  width: 400px;
+  bottom: -20px;
+  right: -109px;
+  animation: slideInFromBottom 1s ease-in-out forwards;
+  z-index: 1;
+
+}
 
 
 
@@ -471,6 +476,10 @@ img {
   .hero .col-lg-6 {
     margin-bottom: 30px;
     /* Espacio entre elementos */
+  }
+
+  .hero-imagenes{
+
   }
 
   .img-mobile{
