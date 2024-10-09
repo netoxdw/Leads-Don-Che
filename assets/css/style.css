@@ -52,11 +52,6 @@ img {
   border-radius: 20px;
 }
 
-.btn {
-  background: rgb(39, 85, 62);
-  background: linear-gradient(90deg, rgba(39, 85, 62, 1) 11%, rgba(49, 106, 76, 1) 68%);
-}
-
 .btn-modern {
   display: inline-block;
   padding: 15px 30px;
@@ -431,10 +426,10 @@ img {
     font-size: 1.5rem;
   }
   .hero h1{
-    margin-bottom: 20px;
+    margin: 20px 0px;
   }
   .hero p{
-    margin-bottom: 20px;
+    margin: 30px 0px;
   }
   .hero .row {
     flex-direction: column;
