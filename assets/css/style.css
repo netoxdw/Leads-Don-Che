@@ -42,10 +42,9 @@ html {
   cursor: pointer;
 }
 
+/* Generales */
 h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+
 }
 
 img {
@@ -129,10 +128,10 @@ img {
 
 
 .hero .display-4 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
   font-weight: bold;
-  /* Fuente negrita */
   color: #2a3241;
-  /* Color de texto */
 }
 
 .head-span {
@@ -141,6 +140,7 @@ img {
 
 .hero .lead {
   color: #2a3241;
+  font-weight: 500;
   /* Color de texto */
 }
 
