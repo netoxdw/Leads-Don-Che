@@ -142,8 +142,31 @@ img {
   font-weight: 500;
   /* Color de texto */
 }
+  /* Aplicar animaciones */
+  .animate-h1 {
+    animation: slideInFromLeft 1s ease-in-out forwards;
+  }
+
+  .animate-p {
+    animation: slideInFromLeft 1.2s ease-in-out forwards; /* Un poco más tarde que h1 */
+  }
+
+  .animate-button {
+    animation: slideInFromBottom 1s ease-in-out forwards;
+  }
 
 @keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
   0% {
     transform: translateX(100%);
     opacity: 1;
@@ -173,7 +196,7 @@ img {
 
 /* Aplicación de animaciones cuando sean visibles */
 .animate-desktop {
-  animation: slideInFromLeft 1s ease-in-out forwards;
+  animation: slideInFromRight 1s ease-in-out forwards;
 }
 
 .animate-mobile {
