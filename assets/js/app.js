@@ -12,6 +12,8 @@ const observerOptions = {
           entry.target.classList.add('animate-desktop');
         } else if (entry.target.classList.contains('img-mobile')) {
           entry.target.classList.add('animate-mobile');
+        } else if (entry.target.classList.contains('img-main')) {
+          entry.target.classList.add('animate-main');
         }
       }
     });
@@ -20,5 +22,7 @@ const observerOptions = {
   // Seleccionar las imágenes y observarlas
   const desktopImage = document.querySelector('.img-desktop');
   const mobileImage = document.querySelector('.img-mobile');
+  const mainImage = document.querySelector('.img-main');
   observer.observe(desktopImage);
   observer.observe(mobileImage);
+  observer.observe(mainImage);

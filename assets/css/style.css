@@ -95,7 +95,7 @@ img {
 
 /* Barra de navegación */
 
-.navbar{
+.navbar {
   background-color: transparent;
 }
 
@@ -103,19 +103,22 @@ img {
 .hero {
   background: rgb(207, 220, 232);
   background: linear-gradient(207deg, rgba(207, 220, 232, 1) 0%, rgba(244, 247, 250, 1) 45%, rgba(145, 174, 201, 1) 100%);
-  padding: 20px 0;
+  padding: 20px 0 50px;
   /* Espacio superior e inferior */
 }
-.hero .logo{
+
+.hero .logo {
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
 }
-.hero .logo img{
+
+.hero .logo img {
   width: 45px;
   border-radius: 0px;
 }
-.hero .logo h2{
+
+.hero .logo h2 {
   font-family: "Poppins", sans-serif;
   font-size: 3rem;
   font-weight: bold;
@@ -142,24 +145,14 @@ img {
   font-weight: 500;
   /* Color de texto */
 }
-  /* Aplicar animaciones */
-  .animate-h1 {
-    animation: slideInFromLeft 1s ease-in-out forwards;
-  }
 
-  .animate-p {
-    animation: slideInFromLeft 1.2s ease-in-out forwards; /* Un poco más tarde que h1 */
-  }
-
-  .animate-button {
-    animation: slideInFromBottom 1s ease-in-out forwards;
-  }
 
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -171,6 +164,7 @@ img {
     transform: translateX(100%);
     opacity: 1;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -182,16 +176,35 @@ img {
     transform: translateY(100%);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
+/* Aplicar animaciones */
+.animate-h1 {
+  animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+.animate-p {
+  animation: slideInFromLeft 1.2s ease-in-out forwards;
+  /* Un poco más tarde que h1 */
+}
+
+.animate-button {
+  animation: slideInFromBottom 1s ease-in-out forwards;
+}
+
 /* Imagenes sin animar */
-.img-desktop, .img-mobile {
-  opacity: 0; /* Las imágenes estarán ocultas inicialmente */
-  transform: translateX(0); /* Reiniciar posición */
+.img-desktop,
+.img-mobile,
+.img-main {
+  opacity: 0;
+  /* Las imágenes estarán ocultas inicialmente */
+  transform: translateX(0);
+  /* Reiniciar posición */
 }
 
 /* Aplicación de animaciones cuando sean visibles */
@@ -217,8 +230,12 @@ img {
   padding: 100px 0;
   /* Espacio superior e inferior */
 }
+.animate-main{
+  animation: slideInFromBottom 1s ease-in-out forwards;
+}
 
 .main h2 {
+  margin-top: 30px;
   font-weight: bold;
   /* Fuente negrita */
   color: #333;
@@ -479,18 +496,22 @@ img {
 /* Media query para dispositivos móviles */
 @media (max-width: 575px) {
 
-  .hero .logo{
+  .hero .logo {
     padding: 50px 0px;
   }
-  .hero .logo h2{
+
+  .hero .logo h2 {
     font-size: 1.5rem;
   }
-  .hero h1{
+
+  .hero h1 {
     margin: 20px 0px;
   }
-  .hero p{
+
+  .hero p {
     margin: 30px 0px;
   }
+
   .hero .row {
     flex-direction: column;
     /* Apilar contenido en columna */
@@ -501,11 +522,11 @@ img {
     /* Espacio entre elementos */
   }
 
-  .hero-imagenes{
+  .hero-imagenes {
     margin-top: 100px;
   }
 
-  .img-mobile{
+  .img-mobile {
     width: 200px;
     bottom: -10px;
     right: -15px;
@@ -514,40 +535,42 @@ img {
 
 /** dispositivos pequeños en vista landscape (horizontal) */
 @media (min-width: 576px) and (max-width: 767px) {
-  .hero .logo img{
+  .hero .logo img {
     width: 40px;
     margin-bottom: 60px;
   }
-  .hero .logo h2{
+
+  .hero .logo h2 {
     font-size: 1.5rem;
   }
-  .animate-mobile{
+
+  .animate-mobile {
     width: 300px;
   }
 }
 
 /** dispositivos medianos (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
-  .hero .logo img{
+  .hero .logo img {
     width: 55px;
     margin-bottom: 60px;
   }
-  .hero .logo h2{
+
+  .hero .logo h2 {
     font-size: 1.8rem;
   }
 }
 
 /** dispositivos grandes (desktops) */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .hero .logo img{
+  .hero .logo img {
     margin-bottom: 60px;
   }
-  .animate-mobile{
+
+  .animate-mobile {
     width: 300px;
   }
 }
 
 /** dispositivos extra grandes (monitores grandes, tvs) */
-@media (min-width: 1200px) {
-  
-}
+@media (min-width: 1200px) {}
