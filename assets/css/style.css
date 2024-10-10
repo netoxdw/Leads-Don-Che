@@ -186,7 +186,8 @@ img {
 /* Imagenes sin animar */
 .img-desktop,
 .img-mobile,
-.img-main {
+.img-main,
+.button-service {
   opacity: 0;
   /* Las imágenes estarán ocultas inicialmente */
   transform: translateX(0);
@@ -296,6 +297,7 @@ img {
 .servicios .card {
   margin-bottom: 30px;
   /* Espacio entre tarjetas */
+  min-height: 370px;
 }
 
 .servicios .card-img-top {
@@ -310,13 +312,17 @@ img {
 .servicios .card-title {
   font-weight: bold;
   /* Fuente negrita */
-  color: #333;
+  color: #2f589e;
   /* Color de texto */
 }
 
 .servicios .card-text {
   color: #666;
   /* Color de texto */
+}
+
+.animate-button{
+  animation: slideInFromBottom 1s ease-in-out forwards;
 }
 
 

@@ -14,7 +14,9 @@ const observerOptions = {
           entry.target.classList.add('animate-mobile');
         } else if (entry.target.classList.contains('img-main')) {
           entry.target.classList.add('animate-main');
-        }
+        }  else if (entry.target.classList.contains('button-service')) {
+          entry.target.classList.add('animate-button');
+        } 
       }
     });
   }, observerOptions);
@@ -23,6 +25,8 @@ const observerOptions = {
   const desktopImage = document.querySelector('.img-desktop');
   const mobileImage = document.querySelector('.img-mobile');
   const mainImage = document.querySelector('.img-main');
+  const sericeButton = document.querySelector('.button-service');
   observer.observe(desktopImage);
   observer.observe(mobileImage);
   observer.observe(mainImage);
+  observer.observe(sericeButton);
