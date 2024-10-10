@@ -277,6 +277,8 @@ img {
 .servicios {
   padding: 100px 0;
   /* Espacio superior e inferior */
+  background: rgb(223,239,250);
+background: linear-gradient(0deg, rgba(223,239,250,1) 5%, rgba(159,209,241,1) 50%, rgba(223,239,250,1) 85%);
 }
 
 .servicios h2 {
@@ -330,17 +332,18 @@ img {
 .testimonios {
   padding: 100px 0;
   /* Espacio superior e inferior */
+  background-color: black;
 }
 
 .testimonios h3 {
   font-weight: bold;
   /* Fuente negrita */
-  color: #333;
+  color: #f1f8fd;
   /* Color de texto */
 }
 
 .testimonios .lead {
-  color: #666;
+  color: #f1f8fd;
   /* Color de texto */
 }
 
