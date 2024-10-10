@@ -183,6 +183,16 @@ img {
   }
 }
 
+/* Imagenes sin animar */
+.img-desktop,
+.img-mobile,
+.img-main {
+  opacity: 0;
+  /* Las imágenes estarán ocultas inicialmente */
+  transform: translateX(0);
+  /* Reiniciar posición */
+}
+
 /* Aplicar animaciones */
 .animate-h1 {
   animation: slideInFromLeft 1s ease-in-out forwards;
@@ -197,15 +207,7 @@ img {
   animation: slideInFromBottom 1s ease-in-out forwards;
 }
 
-/* Imagenes sin animar */
-.img-desktop,
-.img-mobile,
-.img-main {
-  opacity: 0;
-  /* Las imágenes estarán ocultas inicialmente */
-  transform: translateX(0);
-  /* Reiniciar posición */
-}
+
 
 /* Aplicación de animaciones cuando sean visibles */
 .animate-desktop {
@@ -238,12 +240,14 @@ img {
   margin-top: 30px;
   font-weight: bold;
   /* Fuente negrita */
-  color: #333;
+  color: #29323d;
   /* Color de texto */
 }
 
 .main .lead {
-  color: #666;
+
+  color: #2a3241;
+  font-weight: 500;
   /* Color de texto */
 }
 
@@ -258,18 +262,12 @@ img {
 }
 
 .main .list-unstyled i {
-  color: #007bff;
+  color: #20a133;
   /* Color del ícono de verificación */
   margin-right: 10px;
   /* Espacio entre ícono y texto */
 }
 
-.main .btn-primary {
-  background-color: #007bff;
-  /* Fondo azul */
-  border-color: #007bff;
-  /* Borde azul */
-}
 
 
 
@@ -283,13 +281,16 @@ img {
 .servicios h2 {
   font-weight: bold;
   /* Fuente negrita */
-  color: #333;
+  color: #29323d;
+
   /* Color de texto */
 }
 
 .servicios .lead {
-  color: #666;
+  color: #29323d;
+  font-weight: 300;
   /* Color de texto */
+  margin-bottom: 25px;
 }
 
 .servicios .card {
