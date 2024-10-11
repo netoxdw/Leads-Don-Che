@@ -299,7 +299,7 @@ background: linear-gradient(0deg, rgba(223,239,250,1) 5%, rgba(159,209,241,1) 50
 .servicios .card {
   margin-bottom: 30px;
   /* Espacio entre tarjetas */
-  min-height: 370px;
+  min-height: 430px;
 }
 
 .servicios .card-img-top {
