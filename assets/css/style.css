@@ -101,9 +101,10 @@ img {
 
 /* Estilos para la sección Hero */
 .hero {
+  background: rgb(207, 220, 232);
+  background: linear-gradient(207deg, rgba(207, 220, 232, 1) 0%, rgba(244, 247, 250, 1) 45%, rgba(145, 174, 201, 1) 100%);
   padding: 20px 0 50px;
   /* Espacio superior e inferior */
-  background-image: url(/assets/images/css-pattern-by-magicpattern.png);
 }
 
 
