@@ -96,43 +96,22 @@ img {
 /* Barra de navegación */
 
 .navbar {
-  background-color: transparent;
+  background-color: #fff;
 }
 
 /* Estilos para la sección Hero */
 .hero {
-  background: rgb(207, 220, 232);
-  background: linear-gradient(207deg, rgba(207, 220, 232, 1) 0%, rgba(244, 247, 250, 1) 45%, rgba(145, 174, 201, 1) 100%);
   padding: 20px 0 50px;
   /* Espacio superior e inferior */
+  background-image: url(/assets/images/css-pattern-by-magicpattern.png);
 }
 
-.hero .logo {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 10px;
-}
-
-.hero .logo img {
-  width: 45px;
-  border-radius: 0px;
-}
-
-.hero .logo h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 3rem;
-  font-weight: bold;
-  font-style: italic;
-  color: #29323d;
-  margin-left: 10px;
-  padding-top: 12px;
-}
 
 
 .hero .display-4 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   color: #2a3241;
 }
 
@@ -237,6 +216,7 @@ img {
   animation: slideInFromBottom 1s ease-in-out forwards;
 }
 
+
 .main h2 {
   margin-top: 30px;
   font-weight: bold;
@@ -249,6 +229,7 @@ img {
 
   color: #2a3241;
   font-weight: 500;
+  font-size: 18px;
   /* Color de texto */
 }
 
