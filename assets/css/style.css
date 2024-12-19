@@ -80,24 +80,6 @@ body {
   color: #555;
 }
 
-.testimonials .card {
-  border-radius: 10px;
-}
-
-.testimonials h2 {
-  font-size: 2rem;
-  line-height: 1.5;
-}
-
-.overflow-auto::-webkit-scrollbar {
-  height: 8px;
-}
-
-.overflow-auto::-webkit-scrollbar-thumb {
-  background-color: #c0c0c0;
-  border-radius: 10px;
-}
-
 .features-section {
   padding: 50px 20px;
   background-color: #ffffff;
