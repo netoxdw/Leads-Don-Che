@@ -21,12 +21,12 @@ body {
 }
 
 .main-section span {
-  color: #00ff00;
+  color: #c3d77a;
 }
 
 .main-section .btn-primary {
-  background-color: #4b0082;
-  border-color: #4b0082;
+  background-color: #42e662;
+  border-color: #fefefe;
 }
 
 .main-section .btn-primary:hover {
