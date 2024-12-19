@@ -50,6 +50,9 @@ body {
   margin-bottom: 40px;
   font-weight: bold;
 }
+span{
+  color: #9825f8;
+}
 
 .benefit {
   text-align: center;
@@ -103,7 +106,7 @@ body {
 }
 
 .feature img {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
   margin-right: 20px;
   flex: 1;
