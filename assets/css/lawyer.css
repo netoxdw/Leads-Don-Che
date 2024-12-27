@@ -1,0 +1,518 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Matching the dark gradient */
+}
+
+/* Hero section styles */
+.hero {
+    background: linear-gradient(90deg, #572000, #1a1a1a);
+    color: #fff;
+    padding: 50px 0;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Hero text styles */
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    color: #f1b094;
+}
+
+.hero-btn {
+    background-color: #ff6600;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.hero-btn:hover {
+    background-color: #e05a00;
+}
+
+/* Video container styles */
+.video-container iframe {
+    border: 5px solid #ff6600;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* General section styles */
+.value-proposition {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Title and text styles */
+.value-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-orange {
+    color: #ff6600;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.value-note {
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+/* Button styles */
+.value-btn {
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.value-btn:hover {
+    background-color: #e05a00;
+}
+
+/* Image stacking */
+.image-stack {
+    position: relative;
+    width: 90%;
+}
+
+.image-stack-item {
+    position: absolute;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.image-stack-item img {
+    border: 3px solid #00c7b6; /* Teal border */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-stack-item-top {
+    top: -20px;
+    left: 20px;
+}
+
+.image-stack-item-bottom {
+    top: 60px;
+    left: -20px;
+}
+
+.image-stack:hover .image-stack-item-top {
+    transform: translateY(-10px) translateX(10px);
+}
+
+.image-stack:hover .image-stack-item-bottom {
+    transform: translateY(10px) translateX(-10px);
+}
+
+
+/* General section styles */
+.benefits {
+    background-color: #fdf1ee; /* Light pink background */
+    color: #333;
+}
+
+/* Title styles */
+.benefits-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff6600; /* Orange */
+    margin-bottom: 40px;
+}
+
+/* Benefit item styles */
+.benefit-item {
+    padding: 20px;
+}
+
+.benefit-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #000; /* Black circle */
+    color: #ff6600; /* Orange icon */
+    font-size: 2rem;
+    line-height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.benefit-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.benefit-description {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #fff;
+    color: #333;
+}
+
+.testimonials-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.testimonials-subtitle {
+    font-size: 1.5rem;
+    color: #ff6600; /* Orange */
+    margin-bottom: 40px;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    background-color: #fdf1ee; /* Light pink */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.testimonial-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #ff6600;
+    font-size: 1.5rem;
+    line-height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.testimonial-author {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.testimonial-role {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* CTA Button */
+.testimonials-btn {
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.testimonials-btn:hover {
+    background-color: #e05a00;
+}
+
+
+/* Motivation Section */
+.motivation {
+    background-color: #333; /* Dark gray background */
+    color: #fff;
+}
+
+.motivation-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.motivation-subtitle {
+    font-size: 1.5rem;
+    color: #ff6600; /* Orange */
+}
+
+/* Lists */
+.motivation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.motivation-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.icon-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.icon-box.negative {
+    background-color: #ff6600; /* Orange for negative */
+    color: #000;
+}
+
+.icon-box.positive {
+    background-color: #00c7b6; /* Teal for positive */
+    color: #fff;
+}
+
+
+/* Features Section */
+.features {
+    background-color: #fdf1ee; /* Light pink background */
+    color: #333;
+}
+
+.features-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+/* Feature Item */
+.feature-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.feature-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Call-to-Action Section */
+.cta {
+    background-color: #333; /* Dark gray background */
+    color: #fff;
+    padding: 60px 0;
+}
+
+.cta-subtitle {
+    font-size: 1.5rem;
+    color: #ff6600; /* Orange */
+    margin-bottom: 20px;
+    /* font-weight: bold; */
+}
+
+.cta-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.cta-description {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.cta-btn {
+    background-color: #ff6600; /* Orange button */
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background-color: #e05a00; /* Darker orange on hover */
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a; /* Dark gray */
+    color: #fff;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 100px; /* Adjust logo size */
+}
+
+.footer-rights p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #ccc; /* Light gray text */
+}
+
+
+
+
+
+
+
+/* Responsivity */
+@media (max-width: 768px) {
+    .hero {
+        text-align: left;
+        padding: 30px 20px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: 250px;
+        margin-top: 30px;
+    }
+    .value-title {
+        font-size: 1.5rem;
+    }
+
+    .text-orange {
+        font-size: 1rem;
+    }
+
+    .value-note {
+        font-size: 0.9rem;
+    }
+
+    .image-stack-item {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .benefit-item {
+        margin-bottom: 30px;
+    }
+
+    .benefit-title {
+        font-size: 1.1rem;
+    }
+
+    .benefit-description {
+        font-size: 0.9rem;
+    }
+
+    .testimonial-card {
+        margin-bottom: 30px;
+    }
+
+    .motivation-title {
+        font-size: 1.8rem;
+    }
+
+    .motivation-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .motivation-list li {
+        font-size: 0.9rem;
+    }
+
+    .features-title {
+        font-size: 1.5rem;
+    }
+
+    .feature-item {
+        margin-bottom: 30px;
+    }
+
+    .feature-title {
+        font-size: 1rem;
+    }
+
+    .cta-title {
+        font-size: 1.8rem;
+    }
+
+    .cta-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .cta-description {
+        font-size: 0.9rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 10px;
+    }
+}
