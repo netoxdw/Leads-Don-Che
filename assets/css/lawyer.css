@@ -30,9 +30,10 @@ body {
 }
 
 .hero-btn {
-    background-color: #d2b64d;
+    background-color: #f96f00;
     color: white;
     font-size: 1.1rem;
+    font-weight: 600;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -421,12 +422,12 @@ body {
         padding: 50px 25px;
     }
     .hero .logo img{
-        width: 6rem;
+        width: 5rem;
     }
     .hero-title {
         font-size: 1.6rem;
         margin-bottom: 10px;
-        margin-top: 35px;
+        margin-top: 25px;
     }
 
     .hero-description {
@@ -434,7 +435,11 @@ body {
         margin-bottom: 15px;
     }
     .hero-btn{
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .btn-container{
+        text-align: center;
     }
 
     .video-container iframe {
