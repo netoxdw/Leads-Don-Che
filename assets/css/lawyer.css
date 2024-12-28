@@ -418,7 +418,7 @@ body {
 @media (max-width: 768px) {
     .hero {
         text-align: left;
-        padding: 50px 30px;
+        padding: 50px 25px;
     }
     .hero .logo img{
         width: 6rem;
