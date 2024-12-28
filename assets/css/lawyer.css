@@ -26,11 +26,11 @@ body {
     font-size: 1.6rem;
     margin-bottom: 40px;
     color: #f75f1e;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .hero-btn {
-    background-color: #c89b38;
+    background-color: #d2b64d;
     color: white;
     font-size: 1.1rem;
     padding: 10px 20px;
