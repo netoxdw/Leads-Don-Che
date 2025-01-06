@@ -115,6 +115,48 @@
     line-height: 1.4;
 }
 
+/********************************
+  SECCIÓN CARACTERÍSTICAS
+*********************************/
+
+/* Sección con fondo oscuro. 
+   (Si prefieres establecerlo directamente en el CSS en lugar de usar 
+   las clases de Bootstrap, podrías usar .features-section { background-color: #000; } ) */
+   .features-section {
+    background-color: black;
+  }
+  
+  /* Puedes personalizar aún más los encabezados y párrafos en esta sección */
+  .features-section h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #fff;
+  }
+  .features-section p {
+    color: #fff; /* Asegura el contraste sobre el fondo oscuro */
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  .features-section span{
+    color: #1ab3c0;
+  }
+  
+  /* Estilos para las tarjetas */
+  .feature-card {
+    background-color: #212529; /* Un gris oscuro para diferenciarlas del fondo negro */
+    border: none;             /* Eliminamos el borde por defecto de la card */
+  }
+  
+  .feature-card .card-title {
+    color: #1ab3c0; /* Ejemplo de color destacado para los títulos */
+    font-weight: 600;
+  }
+  
+  .feature-card .card-text {
+    color: #f8f9fa; /* Blanco claro de Bootstrap para el texto */
+  }
+  
+
 @media (max-width: 767.98px) {
     .problem-solution h2{
         font-size: 1.5rem;
