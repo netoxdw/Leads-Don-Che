@@ -74,7 +74,7 @@
   SECCIÓN PROBLEMA-SOLUCIÓN
 *********************************/
 .problem-solution {
-    background-color: #eefdfd;
+    background-color: #f1f1f1;
 }
 .problem-solution h2{
     font-size: 2.5rem;
@@ -91,13 +91,23 @@
 }
 
 /* Card horizontal (estilo opcional adicional) */
+.horizontal-card .card{
+    padding: 10px;
+}
 .horizontal-card .card-body {
     padding: 1.5rem;
 }
+.horizontal-card img{
+    width: 100%;
+}
 
 .horizontal-card .card-title {
-    font-weight: bold;
+    font-weight: 800;
     font-size: 1.25rem;
+    text-transform: uppercase;
+}
+.horizontal-card span{
+    color: #1ab3c0;
 }
 
 .horizontal-card .card-text {
