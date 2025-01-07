@@ -1,18 +1,18 @@
 /* Navbar */
 .custom-navbar {
-    /* Para que el navbar se superponga y sea transparente */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-    background-color: transparent !important;
-    /* Sobrescribe el fondo */
-    /* Si deseas que sea completamente transparente, usa la propiedad background: none !important; */
+  /* Para que el navbar se superponga y sea transparente */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: transparent !important;
+  /* Sobrescribe el fondo */
+  /* Si deseas que sea completamente transparente, usa la propiedad background: none !important; */
 }
 
 .navbar-brand {
-    color: #fff;
+  color: #fff;
 }
 
 
@@ -20,99 +20,108 @@
   ESTILOS PARA LA SECCIÓN PRINCIPAL
 *********************************/
 .hero {
-    /* Ajusta la ruta de tu imagen de fondo */
-    background: url('/assets/images/hero-bg.jpg') no-repeat center center;
-    background-size: cover;
-    min-height: 100vh;
-    /* Ajusta la altura mínima */
-    padding-top: 80px;
-    /* Para evitar que el contenido quede debajo del navbar */
-    padding-bottom: 80px;
+  /* Ajusta la ruta de tu imagen de fondo */
+  background: url('/assets/images/hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  /* Ajusta la altura mínima */
+  padding-top: 80px;
+  /* Para evitar que el contenido quede debajo del navbar */
+  padding-bottom: 80px;
 }
 
 /* Para el texto sobre fondo oscuro, en caso de que la imagen sea oscura, 
      podrías usar text-white o un color que contraste bien. */
 
 /* Color del span */
-.hero h1{
-    font-weight: 700;
+.hero h1 {
+  font-weight: 700;
 }
+
 .hero h1 span {
-    color: #1ab3c0;
+  color: #1ab3c0;
 }
-.hero p{
-    font-size: 1.1rem;
-    font-weight: 600;
+
+.hero p {
+  font-size: 1.1rem;
+  font-weight: 600;
 }
-.hero li{
-    font-size: 1rem;
-    font-weight: 600;
+
+.hero li {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 /* Botón de WhatsApp */
 .btn-whatsapp {
-    width: 90%;
-    background-color: #ecaa47;
-    color: #fff;
-    font-weight: 600;
-    border: none;
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
+  width: 90%;
+  background-color: #ecaa47;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
 }
 
 .btn-whatsapp:hover {
-    background-color: #d49a3e;
-    /* Un tono más oscuro al pasar el mouse */
+  background-color: #d49a3e;
+  /* Un tono más oscuro al pasar el mouse */
 }
 
 .ratio iframe {
-    border: 3px solid #eefdfd;
-    border-radius: 15px;
+  border: 3px solid #eefdfd;
+  border-radius: 15px;
 }
 
 /********************************
   SECCIÓN PROBLEMA-SOLUCIÓN
 *********************************/
 .problem-solution {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
-.problem-solution h2{
-    font-size: 2.5rem;
-    font-weight: 900;
+
+.problem-solution h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
 }
+
 /* Encabezado con h2 y un span destacado */
 .problem-solution h2 span {
-    color: #1ab3c0;
-    /* Puedes ajustarlo o mantener el estilo que usas antes */
+  color: #1ab3c0;
+  /* Puedes ajustarlo o mantener el estilo que usas antes */
 }
-.problem-solution p{
-    font-size: 1.8rem;
-    font-weight: 700;
+
+.problem-solution p {
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
 /* Card horizontal (estilo opcional adicional) */
 .horizontal-card {
-    padding: 15px;
+  padding: 15px;
 }
+
 .horizontal-card .card-body {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
-.horizontal-card img{
-    width: 100%;
+
+.horizontal-card img {
+  width: 100%;
 }
 
 .horizontal-card .card-title {
-    font-weight: 800;
-    font-size: 1.25rem;
-    text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-transform: uppercase;
 }
-.horizontal-card span{
-    color: #1ab3c0;
+
+.horizontal-card span {
+  color: #1ab3c0;
 }
 
 .horizontal-card .card-text {
-    font-size: 1rem;
-    line-height: 1.4;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 /********************************
@@ -122,46 +131,99 @@
 /* Sección con fondo oscuro. 
    (Si prefieres establecerlo directamente en el CSS en lugar de usar 
    las clases de Bootstrap, podrías usar .features-section { background-color: #000; } ) */
-   .features-section {
-    background-color: black;
-  }
-  
-  /* Puedes personalizar aún más los encabezados y párrafos en esta sección */
-  .features-section h2{
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: #fff;
-  }
-  .features-section p {
-    color: #fff; /* Asegura el contraste sobre el fondo oscuro */
-    font-weight: 700;
-    font-size: 1.8rem;
-  }
-  .features-section span{
-    color: #1ab3c0;
-  }
-  
-  /* Estilos para las tarjetas */
-  .feature-card {
-    background-color: #212529; /* Un gris oscuro para diferenciarlas del fondo negro */
-    border: none;             /* Eliminamos el borde por defecto de la card */
-  }
-  
-  .feature-card .card-title {
-    color: #1ab3c0; /* Ejemplo de color destacado para los títulos */
-    font-weight: 600;
-  }
-  
-  .feature-card .card-text {
-    color: #f8f9fa; /* Blanco claro de Bootstrap para el texto */
-  }
-  
+.features-section {
+  background-color: black;
+}
+
+/* Puedes personalizar aún más los encabezados y párrafos en esta sección */
+.features-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.features-section p {
+  color: #fff;
+  /* Asegura el contraste sobre el fondo oscuro */
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.features-section span {
+  color: #1ab3c0;
+}
+
+/* Estilos para las tarjetas */
+.feature-card {
+  background-color: #212529;
+  /* Un gris oscuro para diferenciarlas del fondo negro */
+  border: none;
+  /* Eliminamos el borde por defecto de la card */
+}
+
+.feature-card .card-title {
+  color: #1ab3c0;
+  /* Ejemplo de color destacado para los títulos */
+  font-weight: 600;
+}
+
+.feature-card .card-text {
+  color: #f8f9fa;
+  font-size: 1rem;
+  /* Blanco claro de Bootstrap para el texto */
+}
+
+/********************************
+  SECCIÓN ABOUT ME
+*********************************/
+/* Fondo blanco para toda la sección */
+.about-me-section {
+  background-color: #fff;
+}
+
+/* Contenedor tipo hoja */
+.paper-container {
+  background-color: #fff;
+  /* Aseguramos el fondo blanco */
+  border-radius: 8px;
+  /* Borde redondeado */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  /* Sombra para dar efecto de hoja */
+}
+
+/* Estilo de la foto (opcional) */
+.foto-about-me {
+  max-width: 180px;
+  /* Controla el tamaño máximo de la foto */
+  border: 4px solid #ecaa47;
+  /* Un borde decorativo; ajusta el color */
+  object-fit: cover;
+}
+
+.about-me-section h2{
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.about-me-section p{
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.about-me-section h3{
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.about-me-section span{
+  color: #1ab3c0;
+}
+
+
 
 @media (max-width: 767.98px) {
-    .problem-solution h2{
-        font-size: 1.5rem;
-    }
-    .problem-solution p{
-        font-size:  1.2rem;
-    }
+  .problem-solution h2 {
+    font-size: 1.5rem;
+  }
+
+  .problem-solution p {
+    font-size: 1.2rem;
+  }
 }
