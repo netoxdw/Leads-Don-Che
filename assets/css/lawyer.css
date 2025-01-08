@@ -165,12 +165,13 @@
   color: #1ab3c0;
   /* Ejemplo de color destacado para los títulos */
   font-weight: 600;
+  font-size: 1.25rem;
 }
 
 .feature-card .card-text {
   color: #f8f9fa;
   font-size: 1rem;
-  /* Blanco claro de Bootstrap para el texto */
+  font-size: 1rem;
 }
 
 /********************************
@@ -218,19 +219,77 @@
 
 
 
+/************************************
+  SECCIÓN "¿Para quién es una Landing Page?"
+*************************************/
+.lp-target-section {
+  background-color: #f1f1f1; /* Color de fondo */
+}
+
+/* Ajustes opcionales de tipografía y espaciado */
+.lp-target-section h3 {
+  font-weight: 700;
+  font-size: 2.5rem; 
+  /* Puedes ajustar el tamaño, por ejemplo:
+  */
+}
+
+.lp-target-section span{
+  color: #1ab3c0;
+}
+
+.lp-target-section p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* Tarjeta con borde solo en los lados */
+.side-border-card {
+  border: none; /* Primero quitamos todos los bordes por defecto */
+  border-right: 2px solid #1ab3c0;  /* Borde derecho */
+  border-top: none; 
+  border-bottom: none;
+  background-color: transparent; 
+}
+.side-border-card h5{
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.side-border-card p{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+
 @media (max-width: 767.98px) {
   .problem-solution h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .problem-solution p {
     font-size: 1.2rem;
   }
+  
+  .features-section h2{
+    font-size: 1.8rem
+  }
+  .features-section p{
+    font-size: 1.2rem;
+  }
 
   .about-me-section h2{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .about-me-section p{
     font-size: 1.1rem;
+  }
+
+  .lp-target-section h3{
+    font-size: 1.8rem;
+  }
+  .lp-target-section p{
+    font-size: 1.2rem;
   }
 }
