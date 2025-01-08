@@ -196,7 +196,8 @@
   max-width: 180px;
   /* Controla el tamaño máximo de la foto */
   border: 4px solid #ecaa47;
-
+  /* Un borde decorativo; ajusta el color */
+  object-fit: cover;
 }
 
 .about-me-section h2{
@@ -224,5 +225,12 @@
 
   .problem-solution p {
     font-size: 1.2rem;
+  }
+
+  .about-me-section h2{
+    font-size: 1.5rem;
+  }
+  .about-me-section p{
+    font-size: 1.1rem;
   }
 }
