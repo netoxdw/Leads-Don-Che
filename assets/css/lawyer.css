@@ -38,7 +38,7 @@
   font-weight: 700;
 }
 
-.hero h1 span {
+span {
   color: #1ab3c0;
 }
 
@@ -206,8 +206,8 @@
   font-weight: 800;
 }
 .about-me-section p{
-  font-weight: 700;
-  font-size: 1.1rem;
+  font-weight: 600;
+  font-size: 1rem;
 }
 .about-me-section h3{
   font-size: 1.5rem;
