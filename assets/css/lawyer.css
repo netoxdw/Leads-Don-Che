@@ -282,7 +282,7 @@ span {
 }
 
 /* Destacar el span dentro del h2 */
-.cta-section h2{
+h2{
   font-size: 2.5rem;
   font-weight: 800;
 }
@@ -307,9 +307,46 @@ span {
 }
 
 
+/********************************
+  SECCIÓN BONUS
+*********************************/
+.bonus-section {
+  background-color: #fff; /* Fondo blanco para toda la sección */
+}
+
+/* Resaltar la palabra "Bonus" en el h2 */
+
+
+/* Card del Bonus */
+.bonus-card {
+  border: none; /* Sin bordes en la card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra ligera */
+  border-radius: 8px;
+}
+.bonus-card h5{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.bonus-card p{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Estilo para las etiquetas (Valor y Ahora Gratis) */
+.price-tag {
+  display: inline-block;
+  background-color: #eefdfd; /* Azul suave */
+  color: #1ab3c0;            /* Texto azul para resaltar */
+  border: 1px solid #1ab3c0; /* Mismo tono de borde */
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+
 
 @media (max-width: 767.98px) {
-  .problem-solution h2 {
+h2 {
     font-size: 1.8rem;
   }
 
