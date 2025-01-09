@@ -262,6 +262,51 @@ span {
 }
 
 
+/********************************
+  SECCIÓN CTA
+*********************************/
+.cta-section {
+  /* Ajusta la ruta de tu imagen de fondo */
+  background: url('/assets/images/cta.bg.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  color: #fff; /* Texto blanco para contrastar con la imagen de fondo */
+}
+
+
+/* Asegura que el contenido esté por encima, 
+   si usas un overlay (opcional) */
+.cta-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Destacar el span dentro del h2 */
+.cta-section h2{
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.cta-section p{
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.cta-section li{
+  font-weight: 700;
+}
+/* Estilo para el botón */
+.btn-whatsapp {
+  background-color: #ecaa47;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #d49a3e; /* Tono más oscuro al pasar el mouse */
+}
+
+
 
 @media (max-width: 767.98px) {
   .problem-solution h2 {
