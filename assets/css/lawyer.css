@@ -344,6 +344,43 @@ h2{
 }
 
 
+/********************************
+  SECCIÓN TESTIMONIOS
+*********************************/
+.testimonials-section {
+  background-color: #000; /* Fondo negro para toda la sección */
+}
+.testimonials-section > .container > p{
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.testimonials-row{
+  justify-content: center;
+}
+/* Ajustes de las tarjetas */
+.testimonial-card {
+  width: 300px; /* Ancho mínimo de cada tarjeta para el scroll */
+  background-color: #fff; 
+  color: #000;               /* Texto negro dentro de la tarjeta */
+  border: none;             /* Sin bordes por defecto */
+  border-radius: 8px;       /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  flex-shrink: 0; /* Evita que la tarjeta se reduzca más allá de su min-width */
+}
+
+
+/* Espaciado dentro de la tarjeta */
+.testimonial-card .card-body {
+  padding: 1.5rem;
+}
+
+/* Alinea mejor los elementos dentro de la tarjeta */
+.testimonial-card img {
+  object-fit: cover;
+  /* Si la foto no es cuadrada, se ajustará centrada y recortada */
+}
+
+
 
 @media (max-width: 767.98px) {
 h2 {
@@ -380,5 +417,12 @@ h2 {
   }
   .cta-section p{
     font-size: 1.2rem;
+  }
+
+  .testimonials-section > .container > p{
+    font-size: 1.2rem;
+  }
+  .testimonials-row{
+    justify-content: start;
   }
 }
