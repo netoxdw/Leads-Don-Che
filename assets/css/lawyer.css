@@ -421,6 +421,9 @@ span {
   object-fit: cover;
   /* Si la foto no es cuadrada, se ajustará centrada y recortada */
 }
+.testimonial-card p{
+  font-size: 1rem;
+}
 
 
 /****************************************
@@ -482,6 +485,23 @@ span {
 .btn-info-custom:hover {
   background-color: #d49a3e;
   /* Tono más oscuro al pasar el mouse */
+}
+
+
+/********************************
+  SECCIÓN GARANTÍA
+*********************************/
+.guarantee-section {
+  background-color: #f1f1f1; /* Fondo gris claro */
+}
+.guarantee-section p{
+  font-size: 1.1rem;
+}
+/* Imagen de garantía */
+.guarantee-image {
+  max-width: 200px;  /* Ajusta el tamaño máximo de la imagen */
+  height: auto;
+  object-fit: contain;
 }
 
 
