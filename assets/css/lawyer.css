@@ -493,6 +493,8 @@ span {
 *********************************/
 .guarantee-section {
   background-color: #f1f1f1; /* Fondo gris claro */
+  padding-top: 70px;
+  padding-bottom: 50px;
 }
 .guarantee-section p{
   font-size: 1.1rem;
