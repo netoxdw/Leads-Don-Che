@@ -1,3 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
 /* Navbar */
 .custom-navbar {
   /* Para que el navbar se superponga y sea transparente */
@@ -201,19 +216,22 @@ span {
   object-fit: cover;
 }
 
-.about-me-section h2{
+.about-me-section h2 {
   font-size: 2.5rem;
   font-weight: 800;
 }
-.about-me-section p{
+
+.about-me-section p {
   font-weight: 600;
   font-size: 1rem;
 }
-.about-me-section h3{
+
+.about-me-section h3 {
   font-size: 1.5rem;
   font-weight: 800;
 }
-.about-me-section span{
+
+.about-me-section span {
   color: #1ab3c0;
 }
 
@@ -223,18 +241,19 @@ span {
   SECCIÓN "¿Para quién es una Landing Page?"
 *************************************/
 .lp-target-section {
-  background-color: #f1f1f1; /* Color de fondo */
+  background-color: #f1f1f1;
+  /* Color de fondo */
 }
 
 /* Ajustes opcionales de tipografía y espaciado */
 .lp-target-section h3 {
   font-weight: 700;
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
   /* Puedes ajustar el tamaño, por ejemplo:
   */
 }
 
-.lp-target-section span{
+.lp-target-section span {
   color: #1ab3c0;
 }
 
@@ -246,17 +265,21 @@ span {
 
 /* Tarjeta con borde solo en los lados */
 .side-border-card {
-  border: none; /* Primero quitamos todos los bordes por defecto */
-  border-right: 2px solid #1ab3c0;  /* Borde derecho */
-  border-top: none; 
+  border: none;
+  /* Primero quitamos todos los bordes por defecto */
+  border-right: 2px solid #1ab3c0;
+  /* Borde derecho */
+  border-top: none;
   border-bottom: none;
-  background-color: transparent; 
+  background-color: transparent;
 }
-.side-border-card h5{
+
+.side-border-card h5 {
   font-weight: 700;
   font-size: 1.25rem;
 }
-.side-border-card p{
+
+.side-border-card p {
   font-size: 1rem;
   font-weight: 600;
 }
@@ -270,7 +293,8 @@ span {
   background: url('/assets/images/cta.bg.jpg') no-repeat center center;
   background-size: cover;
   position: relative;
-  color: #fff; /* Texto blanco para contrastar con la imagen de fondo */
+  color: #fff;
+  /* Texto blanco para contrastar con la imagen de fondo */
 }
 
 
@@ -282,17 +306,16 @@ span {
 }
 
 /* Destacar el span dentro del h2 */
-h2{
-  font-size: 2.5rem;
-  font-weight: 800;
-}
-.cta-section p{
+
+.cta-section p {
   font-size: 1.25rem;
   font-weight: 700;
 }
-.cta-section li{
+
+.cta-section li {
   font-weight: 700;
 }
+
 /* Estilo para el botón */
 .btn-whatsapp {
   background-color: #ecaa47;
@@ -303,7 +326,8 @@ h2{
 }
 
 .btn-whatsapp:hover {
-  background-color: #d49a3e; /* Tono más oscuro al pasar el mouse */
+  background-color: #d49a3e;
+  /* Tono más oscuro al pasar el mouse */
 }
 
 
@@ -311,7 +335,8 @@ h2{
   SECCIÓN BONUS
 *********************************/
 .bonus-section {
-  background-color: #fff; /* Fondo blanco para toda la sección */
+  background-color: #fff;
+  /* Fondo blanco para toda la sección */
 }
 
 /* Resaltar la palabra "Bonus" en el h2 */
@@ -319,15 +344,19 @@ h2{
 
 /* Card del Bonus */
 .bonus-card {
-  border: none; /* Sin bordes en la card */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra ligera */
+  border: none;
+  /* Sin bordes en la card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  /* Sombra ligera */
   border-radius: 8px;
 }
-.bonus-card h5{
+
+.bonus-card h5 {
   font-size: 1.5rem;
   font-weight: 700;
 }
-.bonus-card p{
+
+.bonus-card p {
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -335,9 +364,12 @@ h2{
 /* Estilo para las etiquetas (Valor y Ahora Gratis) */
 .price-tag {
   display: inline-block;
-  background-color: #eefdfd; /* Azul suave */
-  color: #1ab3c0;            /* Texto azul para resaltar */
-  border: 1px solid #1ab3c0; /* Mismo tono de borde */
+  background-color: #eefdfd;
+  /* Azul suave */
+  color: #1ab3c0;
+  /* Texto azul para resaltar */
+  border: 1px solid #1ab3c0;
+  /* Mismo tono de borde */
   padding: 0.5rem 1rem;
   border-radius: 4px;
   font-weight: 600;
@@ -348,24 +380,34 @@ h2{
   SECCIÓN TESTIMONIOS
 *********************************/
 .testimonials-section {
-  background-color: #000; /* Fondo negro para toda la sección */
+  background-color: #000;
+  /* Fondo negro para toda la sección */
 }
-.testimonials-section > .container > p{
+
+.testimonials-section>.container>p {
   font-size: 1.8rem;
   font-weight: 700;
 }
-.testimonials-row{
+
+.testimonials-row {
   justify-content: center;
 }
+
 /* Ajustes de las tarjetas */
 .testimonial-card {
-  width: 300px; /* Ancho mínimo de cada tarjeta para el scroll */
-  background-color: #fff; 
-  color: #000;               /* Texto negro dentro de la tarjeta */
-  border: none;             /* Sin bordes por defecto */
-  border-radius: 8px;       /* Bordes redondeados */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-  flex-shrink: 0; /* Evita que la tarjeta se reduzca más allá de su min-width */
+  width: 300px;
+  /* Ancho mínimo de cada tarjeta para el scroll */
+  background-color: #fff;
+  color: #000;
+  /* Texto negro dentro de la tarjeta */
+  border: none;
+  /* Sin bordes por defecto */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Sombra sutil */
+  flex-shrink: 0;
+  /* Evita que la tarjeta se reduzca más allá de su min-width */
 }
 
 
@@ -381,48 +423,126 @@ h2{
 }
 
 
+/****************************************
+  SECCIÓN STACKING / RESUMEN
+*****************************************/
+
+
+/* Card con borde negro (ya lo definimos en HTML con border-dark) */
+.card.border-dark {
+  border-width: 3px;
+  /* Ajusta el grosor del borde si lo deseas */
+  border-radius: 8px;
+}
+
+.stacking-section li {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.stacking-section .price {
+  font-size: 1.25rem;
+}
+
+/* Precio original (tachado, color rojo) */
+.price-old {
+  color: red;
+  text-decoration: line-through;
+  font-weight: 600;
+}
+
+/* Precio nuevo (destacado) */
+.price-new {
+  color: #1ab3c0;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Estilo del hr en color verde claro */
+.light-green-hr {
+  border: 0;
+  height: 3px;
+  background-color: #18a9b7;
+  /* Ajusta el tono de verde claro */
+  margin: 1.5rem 0;
+}
+
+/* Botón personalizado */
+.btn-info-custom {
+  background-color: #ecaa47;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-info-custom:hover {
+  background-color: #d49a3e;
+  /* Tono más oscuro al pasar el mouse */
+}
+
 
 @media (max-width: 767.98px) {
-h2 {
+  h2 {
     font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.2rem;
   }
 
   .problem-solution p {
     font-size: 1.2rem;
   }
-  
-  .features-section h2{
+
+  .features-section h2 {
     font-size: 1.8rem
   }
-  .features-section p{
+
+  .features-section p {
     font-size: 1.2rem;
   }
 
-  .about-me-section h2{
+  .about-me-section h2 {
     font-size: 1.8rem;
   }
-  .about-me-section p{
+
+  .about-me-section p {
     font-size: 1.1rem;
   }
 
-  .lp-target-section h3{
+  .lp-target-section h3 {
     font-size: 1.8rem;
   }
-  .lp-target-section p{
+
+  .lp-target-section p {
     font-size: 1.2rem;
   }
 
-  .cta-section h2{
+  .cta-section h2 {
     font-size: 1.8rem;
   }
-  .cta-section p{
+
+  .cta-section p {
     font-size: 1.2rem;
   }
 
-  .testimonials-section > .container > p{
+  .testimonials-section>.container>p {
     font-size: 1.2rem;
   }
-  .testimonials-row{
+
+  .testimonials-row {
     justify-content: start;
+  }
+
+  .stacking-section li {
+    font-size: 0.9rem;
+  }
+
+  .stacking-section .price {
+    font-size: 1rem;
   }
 }
