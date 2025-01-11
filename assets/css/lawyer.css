@@ -506,6 +506,44 @@ span {
   object-fit: contain;
 }
 
+/********************************
+  SECCIÓN PREGUNTAS FRECUENTES
+*********************************/
+.faq-section {
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Título y subtítulo */
+.faq-section h2 {
+  font-weight: 700;
+}
+.faq-section h2 span {
+  color: #1ab3c0; /* Ajusta el color que gustes para “Preguntas” */
+}
+
+/* Margen en preguntas y respuestas (opcional) */
+.accordion-button {
+  font-weight: 600;
+}
+
+/* Ajustes de colores o bordes de las preguntas */
+.accordion-item {
+  border: none; /* Quita borde por defecto */
+  border-bottom: 1px solid #ccc; /* Borde inferior sutil entre items */
+}
+
+/* Cambia el color de fondo del heading al estar abierto (opcional) */
+.accordion-button:not(.collapsed) {
+  background-color: #f1f1f1; 
+}
+
+/* Opcional: Estilo para el cuerpo de la respuesta */
+.accordion-body {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
 
 @media (max-width: 767.98px) {
   h2 {
